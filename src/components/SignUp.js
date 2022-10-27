@@ -3,7 +3,6 @@ const SignUp = () => {
     <div className='container'>
       <form>
         <h3>Sign Up</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore eveniet deleniti corrupti quasi suscipit, quisquam qui, aliquid, tenetur dolor alias ea voluptatum aliquam dolorum ducimus. Obcaecati praesentium possims</p>
         <div className='mb-3'>
           <label>First name</label>
           <input
