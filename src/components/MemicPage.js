@@ -13,6 +13,11 @@ return <div className="container">
         The roads will be challenging and somewhat ingenious to pass.<br></br>
         <br></br>
         Hurry, and remember, you only got 3 lives.
+
+
+
+
+        <h2>Kanon</h2>
     </p>
      <button className="startButton">Fight</button>
      <button className="startButton">Run</button>
