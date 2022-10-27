@@ -1,7 +1,7 @@
 import '../styles/signup.css'
 const SignUp = () => {
   return (
-    <div className='container'>
+    <div className='container1'>
       <form>
         <h3>Sign Up</h3>
         <div className='mb-3'>
