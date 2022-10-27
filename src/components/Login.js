@@ -5,7 +5,7 @@ const Login = () => {
       <form>
         <h3>Sign In</h3>
         <div className='mb-3'>
-          <label>Email address</label>
+          <label>Email adress</label>
           <input
             type='email'
             className='form-control'
