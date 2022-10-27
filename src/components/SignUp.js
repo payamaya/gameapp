@@ -1,3 +1,4 @@
+import '../styles/signup.css'
 const SignUp = () => {
   return (
     <div className='container'>
