@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-const Login =() =>{
-    return (
-        <div></div>
-    )
-}
-
-export default Login
-=======
-
 const Login = () => {
   return (
     <form>
@@ -52,4 +42,3 @@ const Login = () => {
   )
 }
 export default Login
->>>>>>> 36d39caa5ad12471c1d9dacb0d7033d48c5515ce
