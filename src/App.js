@@ -1,10 +1,24 @@
-import Login from './components/Login'
+
+ import {BrowserRouter, Routes, Route} from "react-router-dom"
+ import React from "react";
+ import Login from "./components/Login";
+ import StartPage from "./components/StartPage";
+
+
+
 function App() {
   return (
-    <div className='App'>
-      <h1>Hello world </h1>
-      <h6>Heloooooooooooooo</h6>
-      <Login />
+    <div>
+    <BrowserRouter>
+
+    <Routes>
+
+      <Route path = "/" element = {<StartPage/>} />
+      <Route path = "/login" element = {<Login/>} />
+
+    </Routes>
+    </BrowserRouter>
+
     </div>
   )
 }
