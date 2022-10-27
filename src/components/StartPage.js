@@ -27,6 +27,12 @@ const startPage =() => {
                                 <button className="buttonStart">Login / Sign up</button>
                         </Link>
             </div>
+
+            <div>
+                <Link className="links" to = "/MemicPage">
+                    <button>Memic</button>
+                </Link>
+            </div>
         </div>
 
         </div>
