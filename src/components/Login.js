@@ -1,7 +1,7 @@
 import '../styles/login.css'
 const Login = () => {
   return (
-    <div className='container'>
+    <div className='container2'>
       <form>
         <h3>Sign In</h3>
         <div className='mb-3'>
