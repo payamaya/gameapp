@@ -1,3 +1,4 @@
+import '../styles/signup.css'
 const SignUp = () => {
   return (
     <form>
