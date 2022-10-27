@@ -2,13 +2,9 @@
  import {BrowserRouter, Routes, Route} from "react-router-dom"
  import React from "react";
  import Login from "./components/Login";
- import StartPage from "./components/StartPage";
-
-
-
+ import StartPage from "./components/StartPage"
 function App() {
   return (
-
     <div>
     <BrowserRouter>
 
@@ -19,7 +15,6 @@ function App() {
 
     </Routes>
     </BrowserRouter>
-
 
     </div>
   )
