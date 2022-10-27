@@ -27,16 +27,30 @@ box-sizing: border-box;
 h1{
     font-size: 3rem;
     color: azure;
+    margin-top: -10rem;
 }
 
 .textStart{
      margin-top: 8rem;
      font-size: 1.8rem;
      color: azure;
+     line-height: 1.5;
 }
 
 
 .loginContainer{
     height: 100vh;
     background-color: darkseagreen;
+    margin-top: 20rem;
+}
+
+.buttonStart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 5rem;
+    width: 10rem;
+    margin-top: 4rem;
+    border-radius: 8px;
 }
