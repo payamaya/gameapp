@@ -2,9 +2,9 @@ const SignUp = () => {
   return (
     <div className='container'>
       <form>
-        <h3>Sign Up </h3>
+        <h3>Sign Up</h3>
         <div className='mb-3'>
-          <label>First name</label>
+          <label>First name </label>
           <input
             type='text'
             className='form-control'
