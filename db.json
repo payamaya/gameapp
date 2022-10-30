@@ -1,0 +1,18 @@
+{
+  "persons": [
+    {
+      "firstName": "Paul",
+      "lastName": "Yashouh",
+      "email": "paulyashou81@gmail.com",
+      "password": "paulyashouh",
+      "id": "1"
+    },
+    {
+      "firstName": "Vasilki",
+      "lastName": "Vasilki",
+      "email": "vasilki@gmail.com",
+      "password": "vasilki",
+      "id": "2"
+    }
+  ]
+}
