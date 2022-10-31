@@ -7,10 +7,11 @@
 }
 
 body {
-  background-image: url(./img/forest2.jpg);
+  /* background-image: url(./img/forest2.jpg); */
   background-color: rgb(46, 42, 42);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 50vw;
 }
 .container {
   padding: 20rem;
@@ -41,7 +42,7 @@ body {
 h1 {
   font-size: 5rem;
   color: azure;
-  margin-top: -10rem;
+  margin-top: 10rem;
 }
 
 .textStart {

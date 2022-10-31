@@ -12,22 +12,21 @@ const Login = () => {
     e.preventDefault()
     // const person = { email, password }
 
-    console.log(email, password)
-
     fetch('http://localhost:3000/persons')
       .then((response) => response.json())
       .then((data) => {
         let output = `<h2>Password</h2>`
-       
-          output += `<div> 
-    
-       <h5>${email}</h5> 
-       <h5>${password}</h5> 
-    
-        </div>`
-  
+
+        output += `<div> 
+      
+      <h5>${email}</h5> 
+      <h5>${password}</h5> 
+      
+      </div>`
+
         document.getElementById('output').innerHTML = output
-            navigate('/playgame')
+        navigate('/playgame')
+        console.log(email, password)
       })
   }
   return (
@@ -73,7 +72,7 @@ const Login = () => {
         {/* Login must render to another page */}
         <div className='d-grid'>
           <button type='submit' id='getPassword' className='btn btn-primary'>
-            Submit
+            Login
           </button>
         </div>
         <p className='forgot-password text-right'>
