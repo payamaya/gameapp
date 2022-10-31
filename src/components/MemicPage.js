@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const MemicPage = () =>{
 return <div className="container">
     <div className="startContainer">
@@ -12,15 +13,19 @@ return <div className="container">
         in order to complete the game.<br></br>
         The roads will be challenging and somewhat ingenious to pass.<br></br>
         <br></br>
+       
         Hurry, and remember, you only got 3 lives.
 
 
 
 
-        <h2>Kanon</h2>
+        
     </p>
      <button className="startButton">Fight</button>
-     <button className="startButton">Run</button>
+     
+     <Link className="links" to = "/FlamingLakePage">
+        <button>Run</button>
+    </Link>
     </div>
 </div>
 </div>
