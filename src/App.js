@@ -4,7 +4,9 @@ import Login from './components/Login'
 import StartPage from './components/StartPage'
 import SignUp from './components/SignUp'
 import PlayGame from './components/PlayGame'
+// import Effect from './components/Effect'
 import NotFound from './components/NotFound'
+import TheCave from './components/TheCave'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
+          <Route path='/thecave' element={<TheCave />} />
+          {/* <Route path='/effect' element={<Effect />} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

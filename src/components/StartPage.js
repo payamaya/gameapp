@@ -21,7 +21,7 @@ const startPage = () => {
 
         <div className='startButton'>
           <Link className='links' to='/login'>
-            <button className='buttonStart'>Login / Sign up</button>
+            <button className='buttonStart'>Start</button>
           </Link>
         </div>
       </div>

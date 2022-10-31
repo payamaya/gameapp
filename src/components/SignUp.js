@@ -86,7 +86,7 @@ const SignUp = () => {
             // onClick={redirect}
             // to='/login'
             // type='button'
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             // className='btn btn-primary'
           >
             Sign Up
