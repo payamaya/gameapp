@@ -8,20 +8,14 @@
 
 body {
   /* background-image: url(./img/forest2.jpg); */
-  background-color: rgb(46, 42, 42);
+  /* background-color: rgb(46, 42, 42); */
+  background-image: url('./images/forest2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50vw;
+  /* width: 50vw; */
 }
 .container {
-  padding: 20rem;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-}
-.container2 {
+  margin: 15rem;
   padding: 10rem;
   font-size: 5rem;
   display: flex;

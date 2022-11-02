@@ -5,8 +5,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
+  const [name, setName] = useState('')
+  const [username, setUserName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
@@ -14,7 +14,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const user = { firstName, lastName, email, password }
+    const user = { name, username, email, password }
 
     console.log(user)
     fetch('http://localhost:3000/persons', {
@@ -42,8 +42,8 @@ const SignUp = () => {
           <input
             type='text'
             required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             // className='form-control'
             // placeholder='First name'
           />
@@ -53,8 +53,8 @@ const SignUp = () => {
           <input
             type='text'
             required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={username}
+            onChange={(e) => setUserName(e.target.value)}
             // className='form-control'
             // placeholder='Last name'
           />
