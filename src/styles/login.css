@@ -5,3 +5,13 @@
   align-items: center;
   align-content: space-around;
 }
+.submit-btn {
+  font-size: 3rem;
+  color: white;
+  background-color: rgb(98, 98, 98);
+  border-radius: 10px;
+  border: solid 5px white;
+}
+.submit-btn:hover {
+  background-color: rgb(26, 26, 26);
+}
