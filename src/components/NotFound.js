@@ -1,9 +1,8 @@
-import '../styles/notfound.css'
 import { Link } from 'react-router-dom'
 import React from 'react'
 const NotFound = () => {
   return (
-   
+    <div className='container2'>
       <div className='not-found'>
         <div>
           <h4>Page not found 404</h4>
@@ -13,7 +12,7 @@ const NotFound = () => {
           back to home page
         </Link>
       </div>
-  
+    </div>
   )
 }
 export default NotFound
