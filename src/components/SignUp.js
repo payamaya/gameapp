@@ -5,19 +5,17 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
-  const [name, setName] = useState('')
-  const [username, setUserName] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
 
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    const user = { name, username, email, password }
-    // const fetchPassword = async () => {
-    //   const response = await fetch('http://localhost:6000/persons')
-    //   const data = await response.json()
-    // }
+    const user = { firstName, lastName, email, password }
+
     console.log(user)
     fetch('http://localhost:3000/persons', {
       method: 'POST',
@@ -33,8 +31,6 @@ const SignUp = () => {
       })
       .then((data) => console.table(data))
       .catch((error) => console.log('Erorr'))
-    //       const data = await response.json()
-    // setPassword([data, ...password])
   }
 
   return (
@@ -46,8 +42,8 @@ const SignUp = () => {
           <input
             type='text'
             required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
             // className='form-control'
             // placeholder='First name'
           />
@@ -57,8 +53,8 @@ const SignUp = () => {
           <input
             type='text'
             required
-            value={username}
-            onChange={(e) => setUserName(e.target.value)}
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             // className='form-control'
             // placeholder='Last name'
           />
@@ -90,7 +86,6 @@ const SignUp = () => {
             // onClick={redirect}
             // to='/login'
             // type='button'
-            className=' submit-btn'
             onSubmit={handleSubmit}
             // className='btn btn-primary'
           >

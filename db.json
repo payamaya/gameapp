@@ -1,43 +1,25 @@
 {
   "persons": [
     {
-      "login": "Pickadolly",
-      "username": "Paul",
-      "name": "Yashouh",
+      "firstName": "Paul",
+      "lastName": "Yashouh",
       "email": "paulyashou81@gmail.com",
       "password": "paulyashouh",
-      "company": "KLARR",
-      "blog": "www.klarr.se",
-      "location": "Sweden, Västerås",
       "id": "1"
     },
     {
-      "name": "paulpaul",
-      "username": "paulpaul",
-      "email": "pualpaul2paul@paul",
-      "password": "ppp",
+      "firstName": "Vasilki",
+      "lastName": "Vasilki",
+      "email": "vasilki@gmail.com",
+      "password": "vasilki",
       "id": "2"
     },
     {
-      "name": "paulpaul",
-      "username": "paulpaul",
-      "email": "pualpaul2paul@paul",
+      "firstName": "viki",
+      "lastName": "p",
+      "email": "viki@gmail.com",
       "password": "5555",
-      "id": "3"
-    },
-    {
-      "name": "paulyashou",
-      "username": "oau",
-      "email": "oau@liii",
-      "password": "11111",
-      "id": "4"
-    },
-    {
-      "name": "paul.yashouh@student.kyh.se ",
-      "username": "dfd",
-      "email": "dfdf@we",
-      "password": "sdsd",
-      "id": "5"
+      "id": "UyZ2tti"
     }
   ]
 }

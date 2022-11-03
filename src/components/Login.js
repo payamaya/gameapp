@@ -10,23 +10,23 @@ const Login = () => {
   // document.getElementById('getPassword').addEventListener('click', Login)
   const handleSubmit = (e) => {
     e.preventDefault()
-    const person = { email, password }
+    // const person = { email, password }
 
-    console.table(person)
-    fetch(`http://localhost:3000/persons`)
+    fetch('http://localhost:3000/persons')
       .then((response) => response.json())
-      .then((e) => {
+      .then((data) => {
         let output = `<h2>Password</h2>`
 
-        output += `<ul> 
+        output += `<div> 
       
-      <li>${person.email}</li> 
-      <li>${person.password}</li> 
+      <h5>${email}</h5> 
+      <h5>${password}</h5> 
       
-      </ul>`
+      </div>`
 
         document.getElementById('output').innerHTML = output
-        navigate('/login')
+        navigate('/playgame')
+        console.log(email, password)
       })
   }
   return (
@@ -50,7 +50,7 @@ const Login = () => {
           <input
             required
             onChange={(e) => setPassword(e.target.value)}
-            type='password'
+            // type='password'
             value={password}
             id='userPassword'
             className='form-control'
@@ -69,10 +69,12 @@ const Login = () => {
             </label>
           </div>
         </div>
-        <button type='submit' id='getPassword' className='submit-btn'>
-          Login
-        </button>
-       
+        {/* Login must render to another page */}
+        <div className='d-grid'>
+          <button type='submit' id='getPassword' className='btn btn-primary'>
+            Login
+          </button>
+        </div>
         <p className='forgot-password text-right'>
           Forgot
           <Link className='links' to='/signup'>
