@@ -5,7 +5,7 @@ const startPage = () => {
   return (
     <div className='container'>
       <div className='startContainer'>
-        <h1> WELCOME TO THE ADVENTURE </h1>
+        <h1> WELCOME TO THE GAME ADVENTURE </h1>
         <div className='textStart'>
           <p>
             Welcome to the adventure of Memic forest. <br></br>
