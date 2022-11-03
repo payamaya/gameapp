@@ -7,6 +7,8 @@ import PlayGame from './components/PlayGame'
 // import Effect from './components/Effect'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
+import MemicPage from './components/MemicPage'
+import FlamingLake from './components/FlamingLakePage'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
           <Route path='/thecave' element={<TheCave />} />
+           <Route path='/memicpage' element={<MemicPage />} />
+            <Route path='/flaminglake' element={<FlamingLake/>} />
           {/* <Route path='/effect' element={<Effect />} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
