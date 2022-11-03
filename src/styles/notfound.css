@@ -9,7 +9,7 @@
 }
 .link-notfound {
   text-decoration: none;
-  color: red;
+  color: rgb(234, 8, 8);
   margin: 5em;
   font-size: 5rem;
   flex-wrap: wrap;
