@@ -19,7 +19,7 @@ const SignUp = () => {
     //   const data = await response.json()
     // }
     console.log(user)
-    fetch('http://localhost:3000/persons', {
+    fetch('http://localhost:6001/persons', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

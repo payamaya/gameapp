@@ -1,84 +1,68 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import '../styles/login.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-// const id = new URLSearchParams(window.location.search).get('id')
+
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
-  // document.getElementById('getPassword').addEventListener('click', Login)
   const handleSubmit = (e) => {
     e.preventDefault()
-    const person = { email, password }
+    // const user = { email, password }
 
-    console.table(person)
-    fetch(`http://localhost:3000/persons`)
-      .then((response) => response.json())
-      .then((e) => {
-        let output = `<h2>Password</h2>`
+    const url = `http://localhost:6001/persons`
+    const fetchData = async () => {
+      const response = await fetch(url)
+      const data = await response.json()
+      for (let i = 0; i < data.length; i++) {
+        // alert('email sent')
+        //  const email = user.find((user) => user.email === `${data[i].email}`)
+        //  const password = user.find(
+        //    (user) => user.email === `${data[i].password}`
+        //  )
+        if (data[i].email === email && data[i].password === password) {
+          navigate('/playgame')
+          console.log(`hello ${data[i].name} welcome to the game`)
+          return alert(`hello ${data[i].username} welcome to the game`)
+        } else {
+          console.log(`invalid email ${email}`)
+          alert(`invalid email ${email}`)
+        }
+        console.log(data)
+      }
 
-        output += `<ul> 
-      
-      <li>${person.email}</li> 
-      <li>${person.password}</li> 
-      
-      </ul>`
-
-        document.getElementById('output').innerHTML = output
-        navigate('/login')
-      })
+      // try {
+      //   const response = await fetch(url)
+      //   const json = await response.json()
+      //   console.table(json)
+      // } catch (error) {
+      //   console.log('error', error)
+      // }
+    }
+    fetchData([])
+    setEmail('')
   }
+
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
-        <h3>Log In</h3>
-        <div id='output'></div>
-        <div className='mb-3'>
-          <label htmlFor='email'>Email address</label>
-          <input
-            required
-            value={email}
-            id='email'
-            onChange={(e) => setEmail(e.target.value)}
-            className='form-control'
-            placeholder='Enter email'
-          />
-        </div>
-        <div className='mb-3'>
-          <label htmlFor='userPassword'>Password</label>
-          <input
-            required
-            onChange={(e) => setPassword(e.target.value)}
-            type='password'
-            value={password}
-            id='userPassword'
-            className='form-control'
-            placeholder='Enter password'
-          />
-        </div>
-        <div className='mb-3'>
-          <div className='custom-control custom-checkbox'>
-            <input
-              type='checkbox'
-              className='custom-control-input'
-              id='customCheck1'
-            />
-            <label className='custom-control-label' htmlFor='customCheck1'>
-              Remember me
-            </label>
-          </div>
-        </div>
-        <button type='submit' id='getPassword' className='submit-btn'>
+        {/* <div className='email'>{email}</div> */}
+        <input
+          className='login-btn'
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          className='login-btn'
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleSubmit} className='login-btn' type='submit'>
           Login
         </button>
-       
-        <p className='forgot-password text-right'>
-          Forgot
-          <Link className='links' to='/signup'>
-            password?
-          </Link>
-        </p>
       </form>
     </div>
   )
