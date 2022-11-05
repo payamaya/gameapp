@@ -1,8 +1,7 @@
-.card-container {
-  width: 300px;
-  height: 450px;
-  perspective: 40em;
-  margin: 2rem;
+.cardDiv {
+  display: flex;
+  justify-content: center;
+
 }
 
 .card {
@@ -13,6 +12,7 @@
   transition-property: transform;
   transform-style: preserve-3d;
 }
+
 
 .card-back {
   background-image: url('../images/gururuny.png');
@@ -45,6 +45,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
 /* .card-container:hover{
   transform: rotateY(180deg);
 } */
@@ -56,12 +57,6 @@
 
 /* -----------------Card Two----------------------- */
 
-.card-containerImage {
-  width: 300px;
-  height: 450px;
-  perspective: 40em;
-  margin: 2rem;
-}
 
 .cardImage {
   width: 100%;
@@ -82,7 +77,7 @@
 }
 
 .card-frontImage {
-  background-image: url('../images/forestcard.png');
+  background-image: url('../images/lakecard.png');
   background-size: 100%;
   transform: rotateY(180deg);
   background-repeat: no-repeat;
@@ -107,19 +102,72 @@
   /* transform: rotateZ(-180deg); */
 }
 
+/* -----------------Card containers for both cards----------------------- */
+
+
 .containerCard {
-  display: flex;
-  padding: 30rem;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-  float: left;
+  display: table;
+  flex-direction: column;
+  margin-top: 10rem;
 }
-/* .containerCard {
-  width: 100%;
-  height: 100%;
+
+.divContainer {
+
+  height: 100vh;
+  width: 100vw;
+  background: rgb(98, 160, 180);
+  background: linear-gradient(176deg, rgba(98, 160, 180, 1) 0%, rgba(118, 189, 212, 1) 35%, rgba(167, 215, 231, 1) 89%);
   background-repeat: no-repeat;
-  background-size: cover;
-} */
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: table;
+  justify-content: center;
+  flex-direction: row;
+  width: 300px;
+  height: 450px;
+  perspective: 40em;
+  margin: 2rem;
+  margin-top: 15rem;
+}
+
+.divCardGame {
+  display: flex;
+  justify-content: center;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: azure;
+  margin-bottom: 2rem;
+}
+
+.headGame {
+  display: flex;
+  justify-content: center;
+  font-size: 7rem;
+  color: azure;
+  margin-top: 2rem;
+}
+
+.playGame-h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: azure;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  line-height: 5rem;
+}
+
+.memic-link,
+.thecave-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 3rem;
+}
