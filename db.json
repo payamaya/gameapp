@@ -1,25 +1,18 @@
 {
   "persons": [
     {
-      "username": "Paul",
-      "name": "Yashouh",
-      "email": "paulyashou81@gmail.com",
-      "password": "paulyashouh",
+      "name": "rtrt",
+      "username": "rtertewrt",
+      "email": "loarte@info.se",
+      "password": "2233rr",
       "id": "1"
     },
     {
-      "firstName": "Vasilki",
-      "lastName": "Vasilki",
-      "email": "vasilki@gmail.com",
-      "password": "vasilki",
-      "id": "2"
-    },
-    {
-      "firstName": "viki",
-      "lastName": "p",
-      "email": "viki@gmail.com",
-      "password": "5555",
-      "id": "UyZ2tti"
+      "name": "paul",
+      "username": "yashouh",
+      "email": "paulyashou81@gmail.com",
+      "password": "erjk45",
+      "id": "-y30mpT"
     }
   ]
 }

@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault()
-    
+
     // const user = { email, password }
     const url = `http://localhost:6001/persons`
     const fetchData = async () => {
@@ -46,6 +46,7 @@ const Login = () => {
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
+        <h3>Login</h3>
         <input
           className='login-btn'
           required
@@ -61,8 +62,8 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <label>Show Password</label>
         <input type='checkbox' required />
-        Show Password
         <button onClick={handleSubmit} className='login-btn' type='submit'>
           Login
         </button>
