@@ -7,8 +7,8 @@
 }
 
 body {
-  /* background-image: url(./img/forest2.jpg); */
-  background-color: rgb(46, 42, 42);
+  background-image: url(./images/forest2.jpg);
+  /* background-color: rgb(46, 42, 42); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 50vw;
@@ -78,6 +78,7 @@ input {
   padding: 0.5rem;
   margin: 0.5rem;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -99,4 +100,10 @@ a {
 }
 h4 {
   color: beige;
+}
+h3 {
+  color: white;
+}
+label{
+  color: white;
 }

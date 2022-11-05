@@ -1,24 +1,7 @@
 .container {
-<<<<<<< HEAD
-  font-size: 5rem;
-=======
   font-size: 3rem;
->>>>>>> 4516af52ff97dade9e31fa172bc1c1dc6a90dd23
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: space-around;
 }
-<<<<<<< HEAD
-.submit-btn {
-  font-size: 3rem;
-  color: white;
-  background-color: rgb(98, 98, 98);
-  border-radius: 10px;
-  border: solid 5px white;
-}
-.submit-btn:hover {
-  background-color: rgb(26, 26, 26);
-}
-=======
->>>>>>> 4516af52ff97dade9e31fa172bc1c1dc6a90dd23
