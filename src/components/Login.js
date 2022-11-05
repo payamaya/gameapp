@@ -9,8 +9,8 @@ const Login = () => {
   const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault()
+    
     // const user = { email, password }
-
     const url = `http://localhost:6001/persons`
     const fetchData = async () => {
       const response = await fetch(url)
