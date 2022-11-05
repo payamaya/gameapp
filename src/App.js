@@ -9,6 +9,27 @@ import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
 import Memmic from './components/Memmic'
 
+<<<<<<< HEAD
+ import {BrowserRouter, Routes, Route} from "react-router-dom"
+ import React from "react";
+ import Login from "./components/Login";
+ import StartPage from "./components/StartPage"
+ import MemicPage from "./components/MemicPage";
+function App() {
+  return (
+    <div>
+    <BrowserRouter>
+
+    <Routes>
+
+      <Route path = "/" element = {<StartPage/>} />
+      <Route path = "/login" element = {<Login/>} />
+      <Route path = "/MemicPage" element = {<MemicPage/>} />
+
+    </Routes>
+    </BrowserRouter>
+
+=======
 function App() {
   return (
     <div>
@@ -24,6 +45,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+>>>>>>> feature-branch
     </div>
   )
 }
