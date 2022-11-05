@@ -8,14 +8,20 @@
 
 body {
   /* background-image: url(./img/forest2.jpg); */
-  /* background-color: rgb(46, 42, 42); */
-  background-image: url('./images/forest2.jpg');
+  background-color: rgb(46, 42, 42);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 50vw; */
+  width: 50vw;
 }
 .container {
-  margin: 15rem;
+  padding: 20rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.container2 {
   padding: 10rem;
   font-size: 5rem;
   display: flex;
@@ -34,7 +40,7 @@ body {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   color: azure;
   margin-top: 10rem;
 }
@@ -82,7 +88,15 @@ a {
 :checked {
   font-size: 5rem;
 }
-
+.link-notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
 h4 {
   color: beige;
 }
