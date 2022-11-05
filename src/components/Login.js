@@ -15,22 +15,20 @@ const Login = () => {
     const fetchData = async () => {
       const response = await fetch(url)
       const data = await response.json()
+
       for (let i = 0; i < data.length; i++) {
-        // alert('email sent')
-        //  const email = user.find((user) => user.email === `${data[i].email}`)
-        //  const password = user.find(
-        //    (user) => user.email === `${data[i].password}`
-        //  )
         if (data[i].email === email && data[i].password === password) {
           navigate('/playgame')
           console.log(`hello ${data[i].name} welcome to the game`)
           return alert(`hello ${data[i].username} welcome to the game`)
         } else {
           console.log(`invalid email ${email}`)
-          alert(`invalid email ${email}`)
+          // alert(`invalid email ${email}`)
+          // break
         }
-        console.log(data)
       }
+      // break
+      // console.log(data)
 
       // try {
       //   const response = await fetch(url)
@@ -42,24 +40,29 @@ const Login = () => {
     }
     fetchData([])
     setEmail('')
+    setPassword('')
   }
 
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
-        {/* <div className='email'>{email}</div> */}
         <input
           className='login-btn'
           required
+          placeholder='@example.com'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           className='login-btn'
           required
+          placeholder='password'
+          // type='password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <input type='checkbox' required />
+        Show Password
         <button onClick={handleSubmit} className='login-btn' type='submit'>
           Login
         </button>
