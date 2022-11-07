@@ -1,0 +1,16 @@
+
+.containerlake{
+    background-image: url(../img/FlamingLake.jpg);
+    width: 100%;
+    height:601px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.h2{
+    
+    align-items: center;
+    color: red;
+    border: white 3px solid;
+}
