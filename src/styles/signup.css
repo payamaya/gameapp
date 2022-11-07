@@ -1,6 +1,7 @@
-.container1 {
-  background-color: green;
-  border-radius: 10px;
-  color: white;
-  font-size: 2rem;
+.container {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
 }
