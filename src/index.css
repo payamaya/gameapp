@@ -24,6 +24,12 @@ box-sizing: border-box;
 }
 
 
+.container-background{
+    border: 2px solid black;
+    grid-column: span 2/5;
+    grid-row: span 1/3
+}
+
 h1{
     font-size: 3rem;
     color: azure;
