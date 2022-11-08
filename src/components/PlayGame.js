@@ -1,6 +1,6 @@
 import '../styles/card.css'
 import { Link } from 'react-router-dom'
-import cave from '../images/cavecard.png'
+
 
 
 const PlayGame = () => {
