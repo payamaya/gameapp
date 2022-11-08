@@ -1,0 +1,10 @@
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-content: space-evenly;
+  flex-direction: column;
+}
+#login-btn{
+ margin: 1rem;
+}

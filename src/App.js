@@ -8,7 +8,9 @@ import PlayGame from './components/PlayGame'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
 import MemicPage from './components/MemicPage'
-import FlamingLake from './components/FlamingLakePage'
+import Button from './components/Button'
+import FlamingLakePage from './components/FlamingLakePage'
+import GameEnter from './components/GameEnter'
 
 function App() {
   return (
@@ -16,13 +18,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<StartPage />} />
+          <Route path='/gameenter' element={<GameEnter />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
           <Route path='/thecave' element={<TheCave />} />
-           <Route path='/memicpage' element={<MemicPage />} />
-            <Route path='/flaminglake' element={<FlamingLake/>} />
+          <Route path='/memicpage' element={<MemicPage />} />
+          <Route path='/flaminglakepage' element={<FlamingLakePage />} />
           {/* <Route path='/effect' element={<Effect />} /> */}
+          <Route path='button' element={<Button />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

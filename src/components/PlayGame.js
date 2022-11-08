@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 //   setTimeout(doSomething, 1000)
 // }
 
-const PlayGame = () => {
+const PlayGame = ({title}) => {
   return (
     <div className='divContainer'>
       <div className='containerCard'>
@@ -16,7 +16,6 @@ const PlayGame = () => {
           Do you have the guts to choose between these two paths?<br></br>
           What wil it be, The Cave or Flaming Lake? <br></br>
         </h2>
-
         <div className='divCardGame'>
           <div className='card-container'>
             <h3 className='cardHead'>Go to Cave</h3>
@@ -24,20 +23,17 @@ const PlayGame = () => {
               <div className='card-back'></div>
               <div className='card-front'>
                 <Link className='thecave-link' to='/thecave'>
-                
                   Enter Cave
                 </Link>
               </div>
             </div>
           </div>
-
           <div className='card-container'>
             <h3 className='cardHead'>Go to Flaming Lake</h3>
             <div className='card'>
               <div className='card-backImage'></div>
               <div className='card-frontImage'>
-                <Link className='memic-link' to='/memicpage'>
-                  
+                <Link className='memic-link' to='/memicpage'>             
                   Enter Lake
                 </Link>
               </div>

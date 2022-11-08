@@ -1,7 +1,6 @@
 .cardDiv {
   display: flex;
   justify-content: center;
-
 }
 
 .card {
@@ -12,7 +11,6 @@
   transition-property: transform;
   transform-style: preserve-3d;
 }
-
 
 .card-back {
   background-image: url('../images/gururuny.png');
@@ -56,7 +54,6 @@
 }
 
 /* -----------------Card Two----------------------- */
-
 
 .cardImage {
   width: 100%;
@@ -104,7 +101,6 @@
 
 /* -----------------Card containers for both cards----------------------- */
 
-
 .containerCard {
   display: table;
   flex-direction: column;
@@ -112,12 +108,17 @@
 }
 
 .divContainer {
-
   height: 100vh;
   width: 100vw;
   background: rgb(98, 160, 180);
-  background: linear-gradient(176deg, rgba(98, 160, 180, 1) 0%, rgba(118, 189, 212, 1) 35%, rgba(167, 215, 231, 1) 89%);
+  background: linear-gradient(
+    176deg,
+    rgba(98, 160, 180, 1) 0%,
+    rgba(118, 189, 212, 1) 35%,
+    rgba(167, 215, 231, 1) 89%
+  );
   background-repeat: no-repeat;
+  background: cover;
   display: flex;
   justify-content: center;
 }
