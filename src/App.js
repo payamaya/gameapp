@@ -12,6 +12,8 @@ import MemicPage from './components/MemicPage'
  import GaruruNest from "./components/GaruruNest";
 
 
+
+
 function App() {
   return (
     <div>
