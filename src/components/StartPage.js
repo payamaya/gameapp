@@ -15,7 +15,6 @@ const startPage = () => {
               To complete the game you have to defeat the evil Gururu who guards
               the forest.
             </span>
-
             <span>
               The roads will be challenging and somewhat ingenious to pass.
             </span>
