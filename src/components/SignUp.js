@@ -5,19 +5,18 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
+  const [username, setUserName] = useState('')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
 
-
   const handleSubmit = (e) => {
     e.preventDefault()
-    const user = { firstName, lastName, email, password }
+    const user = { name, username, email, password }
 
     console.log(user)
-    fetch('http://localhost:3000/persons', {
+    fetch('http://localhost:6001/persons', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,10 +39,11 @@ const SignUp = () => {
         <div className='mb-3'>
           <label>First name </label>
           <input
+            className='login-btn'
             type='text'
             required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             // className='form-control'
             // placeholder='First name'
           />
@@ -51,10 +51,11 @@ const SignUp = () => {
         <div className='mb-3'>
           <label>Last name</label>
           <input
+            className='login-btn'
             type='text'
             required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={username}
+            onChange={(e) => setUserName(e.target.value)}
             // className='form-control'
             // placeholder='Last name'
           />
@@ -62,6 +63,7 @@ const SignUp = () => {
         <div className='mb-3'>
           <label>Email address</label>
           <input
+            className='login-btn'
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -73,6 +75,7 @@ const SignUp = () => {
         <div className='mb-3'>
           <label>Password</label>
           <input
+            className='login-btn'
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -83,6 +86,7 @@ const SignUp = () => {
         </div>
         <div className='d-grid'>
           <button
+            className='login-btn'
             // onClick={redirect}
             // to='/login'
             // type='button'
