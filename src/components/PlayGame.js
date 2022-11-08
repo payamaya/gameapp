@@ -1,29 +1,16 @@
 import '../styles/card.css'
 import { Link } from 'react-router-dom'
 
-
-const PlayGame = ({title}) => {
+const PlayGame = ({ title }) => {
   return (
     <div className='divContainer'>
-<<<<<<< HEAD
       <div className='containerCard'>
         <h1 className='headGame'>Play Game</h1>
         <h2 className='playGame-h2'>
           Do you have the guts to choose between these two paths?<br></br>
-          What wil it be, The Cave or Flaming Lake? <br></br>
+          What will it be, The Cave or Flaming Lake? <br></br>
         </h2>
-=======
 
-            <div className='containerCard'>
-                  <h1 className='headGame'>Play Game</h1>
-                      <h2 className='playGame-h2'>Do you have the guts to choose between these two paths?<br></br> 
-                                                  What will it be, The Cave or Flaming Lake? <br></br> 
-                                                  
-                      </h2>
-
-      
-
->>>>>>> afcd6fe19924926a83b506b1df902ee140b6a25c
         <div className='divCardGame'>
           <div className='card-container'>
             <h3 className='cardHead'>Go to Cave</h3>
@@ -41,7 +28,7 @@ const PlayGame = ({title}) => {
             <div className='card'>
               <div className='card-backImage'></div>
               <div className='card-frontImage'>
-                <Link className='memic-link' to='/memicpage'>             
+                <Link className='memic-link' to='/memicpage'>
                   Enter Lake
                 </Link>
               </div>
