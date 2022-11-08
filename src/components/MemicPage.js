@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom"
+
 const MemicPage = () =>{
+
+
+
+
+
 return <div className="container">
     <div className="startContainer">
     
@@ -21,8 +27,9 @@ return <div className="container">
 
         
     </p>
-     <button className="startButton">Fight</button>
-     
+    <Link className="links" to = "/MemicDunjan">
+     <button  >Fight</button>
+     </Link>
      <Link className="links" to = "/FlamingLakePage">
         <button>Run</button>
     </Link>
