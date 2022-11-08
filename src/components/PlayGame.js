@@ -1,21 +1,29 @@
 import '../styles/card.css'
 import { Link } from 'react-router-dom'
-// import cave from '../images/cavecard.png'
 
-// import forestbild from '../images/forest.jpg'
-// function Func() {
-//   setTimeout(doSomething, 1000)
-// }
 
 const PlayGame = ({title}) => {
   return (
     <div className='divContainer'>
+<<<<<<< HEAD
       <div className='containerCard'>
         <h1 className='headGame'>Play Game</h1>
         <h2 className='playGame-h2'>
           Do you have the guts to choose between these two paths?<br></br>
           What wil it be, The Cave or Flaming Lake? <br></br>
         </h2>
+=======
+
+            <div className='containerCard'>
+                  <h1 className='headGame'>Play Game</h1>
+                      <h2 className='playGame-h2'>Do you have the guts to choose between these two paths?<br></br> 
+                                                  What will it be, The Cave or Flaming Lake? <br></br> 
+                                                  
+                      </h2>
+
+      
+
+>>>>>>> afcd6fe19924926a83b506b1df902ee140b6a25c
         <div className='divCardGame'>
           <div className='card-container'>
             <h3 className='cardHead'>Go to Cave</h3>
