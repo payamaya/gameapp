@@ -1,6 +1,6 @@
 import '../styles/card.css'
 import { Link } from 'react-router-dom'
-import cave from '../images/cavecard.png'
+
 
 // import forestbild from '../images/forest.jpg'
 
@@ -11,7 +11,7 @@ const PlayGame = () => {
             <div className='containerCard'>
                   <h1 className='headGame'>Play Game</h1>
                       <h2 className='playGame-h2'>Do you have the guts to choose between these two paths?<br></br> 
-                                                  What wil it be, The Cave or Flaming Lake? <br></br> 
+                                                  What will it be, The Cave or Flaming Lake? <br></br> 
                                                   
                       </h2>
 
