@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Xanh+Mono:ital@0;1&display=swap');
+
+/* font-family: 'Xanh Mono', monospace; */
+.container {
+  background: rgb(116, 129, 242);
+  background: linear-gradient(
+    176deg,
+    rgba(116, 129, 242, 1) 17%,
+    rgba(233, 160, 223, 1) 58%,
+    rgba(233, 204, 210, 1) 92%
+  );
+  background-repeat: no-repeat;
+  background: cover;
+}
+h1 {
+  font-family: 'Grechen Fuemen', cursive;
+  padding: 5rem;
+  font-weight: 400;
+  color: Red;
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.54);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+.textStart {
+  text-align: center;
+  font-family: 'Xanh Mono', monospace;
+  line-height: 4rem;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem;
+}
