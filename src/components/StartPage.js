@@ -9,6 +9,7 @@ const startPage = () => {
         <h1> WELCOME TO THE ADVENTURE </h1>
         <div className='textStart'>
           <p>
+            <Audio />
             <span> Welcome to the adventure of Memic forest.</span>
             <span>You will have to make smart choices.</span>
             <span>
@@ -23,9 +24,7 @@ const startPage = () => {
         </div>
         <div className='startButton'>
           <Link className='links' to='/gameenter'>
-            <button className='buttonStart'>
-              <Audio />
-            </button>
+            <button className='buttonStart'></button>
           </Link>
         </div>
       </div>
