@@ -8,18 +8,11 @@ import PlayGame from './components/PlayGame'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
 import MemicPage from './components/MemicPage'
-<<<<<<< HEAD
 import Button from './components/Button'
+import DirectionButton from './components/DirectionButton'
 import FlamingLakePage from './components/FlamingLakePage'
 import GameEnter from './components/GameEnter'
-=======
-import MemicDunjan from './components/MemicDunjan'
- import FlamingLakePage from "./components/FlamingLakePage";
- import GaruruNest from "./components/GaruruNest";
-
-
-
->>>>>>> afcd6fe19924926a83b506b1df902ee140b6a25c
+import CountLife from './components/CountLife'
 
 function App() {
   return (
@@ -31,18 +24,21 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
-          <Route path='/thecave' element={<TheCave />} />
-<<<<<<< HEAD
+          <Route
+            path='/thecave'
+            element={
+              <TheCave>
+                <CountLife />
+              </TheCave>
+            }
+          />
+
           <Route path='/memicpage' element={<MemicPage />} />
           <Route path='/flaminglakepage' element={<FlamingLakePage />} />
-=======
-           <Route path='/memicpage' element={<MemicPage />} />
-           <Route path = "/MemicDunjan" element = {<MemicDunjan/>} />
-           <Route path = "/FlamingLakePage" element = {<FlamingLakePage/>} />
-            <Route path = "/GaruruNest" element = {<GaruruNest/>} />
->>>>>>> afcd6fe19924926a83b506b1df902ee140b6a25c
           {/* <Route path='/effect' element={<Effect />} /> */}
           <Route path='button' element={<Button />} />
+          <Route path='directionbutton' element={<DirectionButton />} />
+          <Route path='countlife' element={<CountLife />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

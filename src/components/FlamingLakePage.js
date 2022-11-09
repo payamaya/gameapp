@@ -1,23 +1,6 @@
-<<<<<<< HEAD
-import Button from './Button'
-
-const FlamingLakePage = () => {
-  return (
-    <div>
-      <h1>FlamingLake</h1>
-      <Button reverse={false}></Button>
-    </div>
-  )
-}
-
-export default FlamingLakePage
-=======
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/FlamingLake.css'
-
-
-
 const FlamingLakePage =() =>{
 
     const [left, setLeft] = useState(false)
@@ -86,4 +69,3 @@ const FlamingLakePage =() =>{
 
 
 export default FlamingLakePage;
->>>>>>> afcd6fe19924926a83b506b1df902ee140b6a25c

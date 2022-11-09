@@ -34,6 +34,7 @@ const Button = ({ children, reverse }) => {
 
   const [direction, setDirection] = useState({
     Score: 3,
+    
   })
 
   const handleCount = (item, action) => {
@@ -144,9 +145,7 @@ const Button = ({ children, reverse }) => {
       >
         Right
       </button>
-
       <button onClick={changeComunity}>Run</button>
-
       <h1
         onClick={changePlayer}
         style={{

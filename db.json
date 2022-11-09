@@ -1,4 +1,11 @@
 {
+  "points": [
+    {
+      "username": "Gururu",
+      "life": 3,
+      "id": 1
+    }
+  ],
   "persons": [
     {
       "name": "rtrt",
