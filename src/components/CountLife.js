@@ -62,7 +62,7 @@ const CountLife = ({ children, reverse }) => {
       >
         {children}
         {state.life} <br />
-        Life left
+        Life left {life}
       </h3>
       <h1>
         {users.map((user) => {
