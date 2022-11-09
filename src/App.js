@@ -10,6 +10,7 @@ import TheCave from './components/TheCave'
 import MemicPage from './components/MemicPage'
  import FlamingLakePage from "./components/FlamingLakePage";
  import GaruruNest from "./components/GaruruNest";
+import GameEnter from './components/GameEnter'
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<StartPage />} />
+          <Route path='/gameenter' element={<GameEnter />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />

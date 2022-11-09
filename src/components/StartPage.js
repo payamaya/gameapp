@@ -9,8 +9,8 @@ const startPage = () => {
         <div className='textStart'>
           <p>
             Welcome to the adventure of Memic forest. <br></br>
-            To complete the game you have to defeat the evil Gururu<br></br>
-            who guards the forest. You will have to make smart choices<br></br>
+            To complete the game you have to defeat the evil Gururu
+            who guards the forest.<br></br> You will have to make smart choices
             in order to complete the game.<br></br>
             The roads will be challenging and somewhat ingenious to pass.
             <br></br>
@@ -20,8 +20,8 @@ const startPage = () => {
         </div>
 
         <div className='startButton'>
-          <Link className='links' to='/login'>
-            <button className='buttonStart'>Start</button>
+          <Link className='links' to='/gameenter'>
+            <button className='buttonStart'>Enter</button>
           </Link>
         </div>
       </div>

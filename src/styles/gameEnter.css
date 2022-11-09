@@ -1,0 +1,103 @@
+.gameContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgb(57, 125, 42);
+    background: linear-gradient(176deg, rgba(57, 125, 42, 1) 14%, rgba(236, 208, 57, 1) 52%, rgba(227, 129, 132, 1) 92%);
+
+}
+
+.divGameText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 7rem;
+}
+
+.divGameHead {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+}
+
+.gameText {
+    font-size: 3rem;
+    color: black;
+}
+
+
+.gameButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.buttonsGame {
+    margin: 7rem;
+    width: 11rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    background-color: rgb(179, 234, 165);
+}
+
+
+#photo {
+    animation: blur 5s infinite alternate;
+    height: 31vw;
+    position: relative;
+    width: 21vw;
+}
+
+#photo div {
+    margin-top: 5rem;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#normal {
+    background-image: url('../images/memicgreen.png');
+    background-size: cover;
+}
+
+#invert {
+    animation: mask 5s steps(69) infinite alternate;
+    background-image: url('../images/memicgreen.png');
+    background-size: cover;
+    filter: invert(1.0) grayscale(1.0);
+    -webkit-mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    -webkit-mask-size: 7000% 100%;
+    mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    mask-size: 7000% 100%;
+}
+
+@keyframes blur {
+    from {
+        filter: blur(3px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes mask {
+    from {
+        -webkit-mask-position: 0% 0;
+        mask-position: 0% 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}

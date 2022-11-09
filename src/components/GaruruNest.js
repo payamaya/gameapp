@@ -33,9 +33,11 @@ const GaruruNest = () =>{
     setVal(e.target.value)
   }
    
-    return (<div>
-        <h2>Garuru</h2>
-        <label > Gissa rätt nummer för att slå Garuru
+    return (
+    
+    <div className="garuruContainer">
+        <h1>Garuru</h1>
+        <label className="garuruLabel"> Gissa ett nummer mellan 1-5 för att slå Garuru
             <br/>
         <input value={Val} onChange={handleChange} placeholder="skriv ett nummer" />
         
