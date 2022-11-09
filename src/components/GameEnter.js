@@ -2,6 +2,7 @@
 import React from 'react'
 import '../styles/gameEnter.css'
 import { Link } from 'react-router-dom'
+import Gururu from "../images/gururuny.png"
 
 
 
@@ -10,11 +11,11 @@ const GameEnter = () => {
 
     <div className='gameContainer'>
 
+    <div id="loading-wrapper">
+        <div id="loading-text">MEMIC</div>
+        <div id="loading-content"></div>
+    </div>
         
-        <div id="photo">
-            <div id="normal"></div>
-            <div id="invert"></div>  
-        </div>
 
     <div className='divGameText'>
         <h1 className='divGameHead'>Memic Forest of Gururu</h1>
@@ -24,8 +25,8 @@ const GameEnter = () => {
         Just sign up and you are ready to play.</h3>
 
         <div className='gameButtons'>
-            <Link to='/login'> <button className='buttonsGame'>Log In</button></Link>
-            <Link to='/signup'> <button  className='buttonsGame'>Sign Up</button></Link>
+            <Link to='/login'> <button className='buttonsGame' href="javascript:void(0);" >Log In</button></Link>
+            <Link to='/signup'> <button  className='buttonsGame' href="javascript:void(0);">Sign Up</button></Link>
         </div>
         
     </div>
