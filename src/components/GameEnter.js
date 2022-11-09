@@ -22,7 +22,7 @@ const GameEnter = () => {
         <h3 className='gameText'>Please Login if you have an account.<br></br>
         <br></br>
         No account?<br></br>
-        Just sign up and you are ready to play.</h3>
+        Just sign up and you are ready to play!</h3>
 
         <div className='gameButtons'>
             <Link to='/login'> <button className='buttonsGame' href="javascript:void(0);" >Log In</button></Link>
