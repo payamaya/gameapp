@@ -47,7 +47,7 @@ const CountLife = ({ children, reverse }) => {
     const response = await fetch(url)
     const users = await response.json()
     setUsers(users)
-    console.table(users)
+    console.log(users)
   }
   useEffect(() => {
     getUsers()
