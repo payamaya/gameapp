@@ -36,6 +36,7 @@ const Button = ({ children, reverse }) => {
   const navigate = useNavigate()
   const [direction, setDirection] = useState({
     Score: 3,
+    
   })
   if (direction.Score === 0) {
     alert('you lose')
@@ -150,10 +151,7 @@ const Button = ({ children, reverse }) => {
       >
         Right state.count
       </button>
-
       <button onClick={changeComunity}>Run</button>
-
-      <h2
         onClick={changePlayer}
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',

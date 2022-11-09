@@ -6,11 +6,13 @@ const PlayGame = ({ title }) => {
     <div className='divContainer'>
       <div className='containerCard'>
         <h1 className='headGame'>Play Game</h1>
-        <h2 className='playGame-h2'>
+        <h2
+          className='
+        playGame-h2'
+        >
           Do you have the guts to choose between these two paths?<br></br>
           What will it be, The Cave or Flaming Lake? <br></br>
         </h2>
-
         <div className='divCardGame'>
           <div className='card-container'>
             <h3 className='cardHead'>Go to Cave</h3>
