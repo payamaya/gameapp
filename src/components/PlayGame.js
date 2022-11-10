@@ -11,7 +11,7 @@ const PlayGame = ({ title }) => {
         playGame-h2'
         >
           Do you have the guts to choose between these two paths?<br></br>
-          What wil it be, The Cave or Flaming Lake? <br></br>
+          What will it be, The Cave or Flaming Lake? <br></br>
         </h2>
         <div className='divCardGame'>
           <div className='card-container'>

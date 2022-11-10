@@ -7,13 +7,7 @@ import PlayGame from './components/PlayGame'
 // import Effect from './components/Effect'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
-import MemicPage from './components/MemicPage'
-import Button from './components/Button'
-import DirectionButton from './components/DirectionButton'
-import FlamingLakePage from './components/FlamingLakePage'
-import GameEnter from './components/GameEnter'
-import CountLife from './components/CountLife'
-
+import MemicPage from './components/MemicPage
 function App() {
   return (
     <div>
@@ -24,17 +18,6 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
-          <Route
-            path='/thecave'
-            element={
-              <TheCave>
-                <CountLife />
-              </TheCave>
-            }
-          />
-
-          <Route path='/memicpage' element={<MemicPage />} />
-          <Route path='/flaminglakepage' element={<FlamingLakePage />} />
           {/* <Route path='/effect' element={<Effect />} /> */}
           <Route path='button' element={<Button />} />
           <Route path='directionbutton' element={<DirectionButton />} />

@@ -9,6 +9,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  height: 50vh;
+  margin: 3rem;
+}
 .startButton {
   display: flex;
   align-content: center;
