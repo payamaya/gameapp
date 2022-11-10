@@ -6,7 +6,7 @@ const startPage = () => {
   return (
     <div className='container'>
       <div className='startContainer'>
-        <h1> WELCOME TO THE ADVENTURE </h1>
+        <h1 className='headStart'> WELCOME TO THE ADVENTURE </h1>
         <div className='textStart'>
           <p>
 
@@ -32,6 +32,9 @@ const startPage = () => {
           </Link>
         </div>
       </div>
+
+      
+      
     </div>
   )
 }

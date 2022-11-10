@@ -12,6 +12,7 @@
   transform-style: preserve-3d;
 }
 
+
 .card-back {
   background-image: url('../images/gururuny.png');
   border-radius: 15px;
@@ -25,6 +26,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 .flaming-link {
   color: red;
   font-size: 4rem;
@@ -111,12 +113,10 @@
   height: 100vh;
   width: 100vw;
   background: rgb(98, 160, 180);
-  background: linear-gradient(
-    176deg,
-    rgba(98, 160, 180, 1) 0%,
-    rgba(118, 189, 212, 1) 35%,
-    rgba(167, 215, 231, 1) 89%
-  );
+  background: linear-gradient(176deg,
+      rgba(98, 160, 180, 1) 0%,
+      rgba(118, 189, 212, 1) 35%,
+      rgba(167, 215, 231, 1) 89%);
   background-repeat: no-repeat;
   background: cover;
   display: flex;

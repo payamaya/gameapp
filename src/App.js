@@ -27,6 +27,7 @@ function App() {
           <Route path='directionbutton' element={<DirectionButton />} />
           <Route path='countlife' element={<CountLife />} />
           <Route path='*' element={<NotFound />} />
+          
         </Routes>
       </BrowserRouter>
     </div>
