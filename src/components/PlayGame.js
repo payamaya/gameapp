@@ -1,5 +1,6 @@
 import '../styles/card.css'
 import { Link } from 'react-router-dom'
+//import cave from '../images/cavecard.png'
 
 const PlayGame = ({ title }) => {
   return (
@@ -11,7 +12,7 @@ const PlayGame = ({ title }) => {
         playGame-h2'
         >
           Do you have the guts to choose between these two paths?<br></br>
-          What wil it be, The Cave or Flaming Lake? <br></br>
+          What will it be, The Cave or Flaming Lake? <br></br>
         </h2>
         <div className='divCardGame'>
           <div className='card-container'>
@@ -30,6 +31,9 @@ const PlayGame = ({ title }) => {
             <div className='card'>
               <div className='card-backImage'></div>
               <div className='card-frontImage'>
+
+                <Link className='memic-link' to='/flaminglakepage'>Run</Link>    
+
                 <Link className='memic-link' to='/memicpage'>
                   Enter Lake
                 </Link>
@@ -38,7 +42,8 @@ const PlayGame = ({ title }) => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    
   )
 }
 export default PlayGame

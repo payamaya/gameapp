@@ -1,6 +1,5 @@
 import React, { useState, useReducer } from 'react'
-import { Link } from 'react-router-dom'
-// import { Navigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import '../styles/button.css'
 const reducer = (state, action) => {
   switch (action.type) {
@@ -29,13 +28,19 @@ const Button = ({ children, reverse }) => {
   const [state, dispatch] = useReducer(reducer, {
     count: 3,
   })
+  if (state.count === 0) {
+    alert('No more lifes')
+  }
 
   // ----------------------------------------------------------//
-
+  const navigate = useNavigate()
   const [direction, setDirection] = useState({
     Score: 3,
-    
   })
+  if (direction.Score === 0) {
+    alert('you lose')
+    navigate('/playgame')
+  }
 
   const handleCount = (item, action) => {
     setDirection((prevState) => {
@@ -103,92 +108,92 @@ const Button = ({ children, reverse }) => {
         color: state.color ? 'red' : 'yellow',
       }}
     >
-      {children}
       <p
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'red' : 'yellow',
         }}
       ></p>
-      <h1 style={{ color: state.color ? 'black' : 'blue' }}>
-        {person.country}
-      </h1>
-      <h1
+      <h2 style={{ color: state.color ? 'black' : 'blue' }}>
+        {/* {person.country} */}
+      </h2>
+      <h2
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'cyan' : 'yellow',
         }}
       >
         {person}
-      </h1>
-      <h2>{person.afterName}</h2>
-      <h3>{person.name}</h3>
+        {children}
+      </h2>
+      {/* <h2>{person.afterName}</h2>
+      <h3>{person.name}</h3> */}
       <button onClick={changePlayer}>Change Player</button>
-      <h1
+      <h2
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'red' : 'green',
         }}
       >
         {comunity}
-      </h1>
+      </h2>
       {state.count}
       <button
-        disabled={state.count >= 3}
+        disabled={state.count <= 0}
         onClick={() => dispatch({ type: 'increment' })}
       >
-        Left
+        Left state.count
       </button>
       <button
         disabled={state.count <= 0}
         onClick={() => dispatch({ type: 'decrement' })}
       >
-        Right
+        Right state.count
       </button>
       <button onClick={changeComunity}>Run</button>
-      <h1
         onClick={changePlayer}
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'black' : 'blue',
         }}
-      >
+      <h2>
         color
-      </h1>
+      </h2>
       <button
         disabled={state.count <= 0}
         onClick={changePlayer}
         onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
-        onMouseUp={changeComunity}
+        // onMouseUp={changeComunity}
       >
         Direction Right
       </button>
-      <Link to={'/login'}>
-        <button
-          disabled={state.count <= 0}
-          onClick={changePlayer}
-          onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
-          onMouseUp={changeComunity}
-        >
-          Direction Left
-        </button>
-      </Link>
 
-      <h1>Score</h1>
-      <span>{direction.Score}</span>
       <button
-        disabled={direction.Score >= 3}
-        onMouseDown={() => handleCount('Score', 'up')}
-        onClick={() => dispatch({ type: 'newColor' })}
+        disabled={state.count <= 0}
+        onClick={changePlayer}
+        onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
+        // onMouseUp={changeComunity}
       >
-        Left
+        Direction Left
+      </button>
+
+      <h2>Score</h2>
+      <h3>{direction.Score}</h3>
+      <button
+        disabled={direction.Score <= 0}
+        onClick={() => handleCount('Score', 'up')}
+        onMouseUp={() => dispatch({ type: 'newBackgroundColor' })}
+        onMouseDown={() => dispatch({ type: 'newColor' })}
+      >
+        Right direction.score
       </button>
       <button
         disabled={direction.Score <= 0}
-        onMouseUp={() => handleCount('Score', 'down')}
-        onClick={() => dispatch({ type: 'newColor' })}
+        onClick={() => handleCount('Score', 'down')}
+        onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
+        onMouseUp={() => dispatch({ type: 'newColor' })}
       >
-        Right
+        Left direction.score
       </button>
     </div>
   )

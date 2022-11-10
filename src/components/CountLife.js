@@ -51,7 +51,7 @@ const CountLife = ({ children, reverse }) => {
   }
   useEffect(() => {
     getUsers()
-  }, [''])
+  })
   return (
     <div className='countlife-container'>
       <h3
@@ -62,7 +62,7 @@ const CountLife = ({ children, reverse }) => {
       >
         {children}
         {state.life} <br />
-        Life left
+        Life left {life}
       </h3>
       <h1>
         {users.map((user) => {

@@ -1,13 +1,10 @@
 {
-  "points": [
-    {
-      "username": "Gururu",
-      "life": 3,
-      "id": 1
-    }
-  ],
-  "persons": [
-    {
+  "points": [ {
+    "username": "Gururu",
+    "life": 3,
+    "id": 1
+  } ],
+  "persons": [ {
       "name": "rtrt",
       "username": "rtertewrt",
       "email": "loarte@info.se",
