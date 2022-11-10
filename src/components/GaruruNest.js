@@ -1,4 +1,7 @@
-import { useState } from 'react'
+
+import { useState, useEffect } from 'react'
+
+
 
 const GaruruNest = () => {
   const [Val, setVal] = useState('')
@@ -22,7 +25,24 @@ const GaruruNest = () => {
   const handleChange = (e) => {
     setVal(e.target.value)
   }
-   
+
+
+  return (
+    <div>
+      <h2>Garuru</h2>
+      <label>
+        {' '}
+        Gissa rätt nummer för att slå Garuru
+        <br />
+        <input
+          value={Val}
+          onChange={handleChange}
+          placeholder='skriv ett nummer'
+        />
+      </label>
+
+      <button onClick={randomNumber}>Get answer</button>
+
     return (
     
     <div className="garuruContainer">
@@ -34,6 +54,7 @@ const GaruruNest = () => {
         </label>
 
         <button onClick={randomNumber}>Get answer</button>
+
     </div>
   )
 }
