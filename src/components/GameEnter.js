@@ -31,5 +31,6 @@ const GameEnter = () => {
     </div>
 
 </div>
-
+  )
+}
 export default GameEnter
