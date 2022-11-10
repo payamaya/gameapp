@@ -30,6 +30,9 @@ const PlayGame = ({ title }) => {
             <div className='card'>
               <div className='card-backImage'></div>
               <div className='card-frontImage'>
+
+                <Link className='memic-link' to='/flaminglakepage'     
+
                 <Link className='memic-link' to='/memicpage'>
                   Enter Lake
                 </Link>

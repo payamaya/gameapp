@@ -22,22 +22,18 @@ const GaruruNest = () => {
   const handleChange = (e) => {
     setVal(e.target.value)
   }
+   
+    return (
+    
+    <div className="garuruContainer">
+        <h1>Garuru</h1>
+        <label className="garuruLabel"> Gissa ett nummer mellan 1-5 för att slå Garuru
+            <br/>
+        <input value={Val} onChange={handleChange} placeholder="skriv ett nummer" />
+        
+        </label>
 
-  return (
-    <div>
-      <h2>Garuru</h2>
-      <label>
-        {' '}
-        Gissa rätt nummer för att slå Garuru
-        <br />
-        <input
-          value={Val}
-          onChange={handleChange}
-          placeholder='skriv ett nummer'
-        />
-      </label>
-
-      <button onClick={randomNumber}>Get answer</button>
+        <button onClick={randomNumber}>Get answer</button>
     </div>
   )
 }

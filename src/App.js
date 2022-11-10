@@ -7,7 +7,11 @@ import PlayGame from './components/PlayGame'
 // import Effect from './components/Effect'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
-import MemicPage from './components/MemicPage
+import MemicPage from './components/MemicPage'
+ import FlamingLakePage from "./components/FlamingLakePage";
+ import GaruruNest from "./components/GaruruNest";
+import GameEnter from './components/GameEnter'
+
 function App() {
   return (
     <div>
