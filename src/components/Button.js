@@ -157,7 +157,7 @@ const Button = ({ children, reverse }) => {
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'black' : 'blue',
         }}
-      >
+      <h2>
         color
       </h2>
       <button

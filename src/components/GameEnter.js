@@ -10,22 +10,22 @@ const GameEnter = () => {
 
     <div className='gameContainer'>
 
+        
+
+    <div className='divGameText'>
     <div id="loading-wrapper">
         <div id="loading-text">MEMIC</div>
         <div id="loading-content"></div>
     </div>
-        
-
-    <div className='divGameText'>
         <h1 className='divGameHead'>Memic Forest of Gururu</h1>
-        <h3 className='gameText'>Please Login if you have an account.<br></br>
+        {/*<h3 className='gameText'>Please Login if you have an account.<br></br>
         <br></br>
         No account?<br></br>
-        Just sign up and you are ready to play!</h3>
+  Just sign up and you are ready to play!</h3>*/}
 
         <div className='gameButtons'>
-            <Link to='/login'> <button className='buttonsGame' href="javascript:void(0);" >Log In</button></Link>
-            <Link to='/signup'> <button  className='buttonsGame' href="javascript:void(0);">Sign Up</button></Link>
+            <Link to='/login'> <button className='buttonsGame'  >Log In</button></Link>
+            <Link to='/signup'> <button  className='buttonsGame' >Sign Up</button></Link>
         </div>
         
     </div>
