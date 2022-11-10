@@ -1,8 +1,7 @@
 
 import React from 'react'
-import '../styles/gameEnter.css'
+import '../styles/gameenter.css'
 import { Link } from 'react-router-dom'
-import Gururu from "../images/gururuny.png"
 
 
 
