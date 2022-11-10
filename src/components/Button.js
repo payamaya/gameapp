@@ -34,7 +34,6 @@ const Button = ({ children, reverse }) => {
 
   const [direction, setDirection] = useState({
     Score: 3,
-    
   })
 
   const handleCount = (item, action) => {
