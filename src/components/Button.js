@@ -36,7 +36,6 @@ const Button = ({ children, reverse }) => {
   const navigate = useNavigate()
   const [direction, setDirection] = useState({
     Score: 3,
-    
   })
   if (direction.Score === 0) {
     alert('you lose')
