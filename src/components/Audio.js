@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactAudioPlayer from 'react-audio-player'
-import music from './Audio/startAudio.mp3'
-
+import music from './Audio/startAudio2.mp3'
 const Audio = () => {
   return (
     <div>
