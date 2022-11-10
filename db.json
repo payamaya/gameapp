@@ -1,50 +1,36 @@
 {
-  "persons": [
-    {
-      "login": "Pickadolly",
-      "username": "Paul",
-      "name": "Yashouh",
-      "email": "paulyashou81@gmail.com",
-      "password": "paulyashouh",
-      "company": "KLARR",
-      "blog": "www.klarr.se",
-      "location": "Sweden, Västerås",
+  "points": [ {
+    "username": "Gururu",
+    "life": 3,
+    "id": 1
+  } ],
+  "persons": [ {
+      "name": "rtrt",
+      "username": "rtertewrt",
+      "email": "loarte@info.se",
+      "password": "2233rr",
       "id": "1"
     },
     {
-      "name": "paulpaul",
-      "username": "paulpaul",
-      "email": "pualpaul2paul@paul",
-      "password": "ppp",
+      "name": "Paul",
+      "username": "Peter",
+      "email": "paulyashou81@gmail.com",
+      "password": "paulyashouh",
       "id": "2"
     },
     {
-      "name": "paulpaul",
-      "username": "paulpaul",
-      "email": "pualpaul2paul@paul",
-      "password": "5555",
+      "name": "Johanna",
+      "username": "Joan",
+      "email": "Johanna@gmail.com",
+      "password": "johanna",
       "id": "3"
     },
     {
-      "name": "paulyashou",
-      "username": "oau",
-      "email": "oau@liii",
-      "password": "11111",
+      "name": "Vasilki",
+      "username": "Vasili",
+      "email": "Vasilki@gmail.com",
+      "password": "vasiliki",
       "id": "4"
-    },
-    {
-      "name": "paul.yashouh@student.kyh.se ",
-      "username": "dfd",
-      "email": "dfdf@we",
-      "password": "sdsd",
-      "id": "5"
-    },
-    {
-      "name": "Vasiliki",
-      "username": "Panagiotidis",
-      "email": "vasiliki@gmail.com",
-      "password": "5555",
-      "id": "E6BEg5l"
     }
   ]
 }

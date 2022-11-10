@@ -1,8 +1,6 @@
-const FlamingLakePage =() =>{
-    return <div>
-        <h2>FlamingLake</h2>
-    </div>
-}
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import '../styles/flaminglake.css'
 
 
-export default FlamingLakePage;

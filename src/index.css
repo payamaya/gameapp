@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
 *,
 ::before,
 ::after {
@@ -6,16 +9,25 @@
   box-sizing: border-box;
 }
 
-body {
-  /*background-image: url('./images/forest2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  background: rgb(98, 160, 180);
-  background: linear-gradient(176deg, rgba(98, 160, 180, 1) 0%, rgba(118, 189, 212, 1) 35%, rgba(167, 215, 231, 1) 89%);
+
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .container {
-  margin: 15rem;
+  padding: 20rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}*/
+
+.container2 {
   padding: 10rem;
   font-size: 5rem;
   display: flex;
@@ -24,21 +36,25 @@ body {
   align-content: space-around;
 }
 
-.startContainer {
+/** {
+  padding: 0;
+  margin: 0;
+
+}*/
+
+body {
   height: 100vh;
-  width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.headStart {
-  display: flex;
-  justify-content: center;
-  font-size: 7rem;
+
+h1 {
+  font-size: 5rem;
   color: rgb(0, 0, 0);
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .textStart {
@@ -47,42 +63,28 @@ body {
   margin-top: 8rem;
   font-size: 2.5rem;
   color: rgb(0, 0, 0);
-  line-height: 1.5;
+  line-height: 5rem;
+  text-align: center;
 }
 
-/* .loginContainer {
-  height: 100vh;
-  background-color: darkseagreen;
-  margin-top: 20rem;
-} */
 
-.buttonStart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  height: 5rem;
-  width: 12rem;
-  margin-top: 4rem;
-  border-radius: 8px;
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
 }
 
-.btn {
-  font-size: 1.5rem;
-  background-color: rgba(228, 225, 225, 0.531);
-  border-radius: 5px;
-  border: solid white 2px;
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
 }
 
-input {
-  padding: 0.5rem;
-  margin: 0.5rem;
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
 
 .form-control {
   font-size: 1rem;
@@ -92,22 +94,24 @@ a {
   font-size: 5rem;
 }
 
+.link-notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+
 h4 {
   color: beige;
 }
 
-.startCardContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  height: 70rem;
-  width: 100%;
-  background-color: red;
+h3 {
+  color: white;
 }
 
-.cardColumn {
-  display: flex;
-  justify-content: center;
-  flex-direction: columnrow;
-
+label {
+  color: white;
 }
