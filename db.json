@@ -1,4 +1,11 @@
 {
+  "points": [
+    {
+      "username": "Gururu",
+      "life": 3,
+      "id": 1
+    }
+  ],
   "persons": [
     {
       "name": "rtrt",
@@ -8,11 +15,25 @@
       "id": "1"
     },
     {
-      "name": "paul",
-      "username": "yashouh",
+      "name": "Paul",
+      "username": "Peter",
       "email": "paulyashou81@gmail.com",
-      "password": "erjk45",
-      "id": "-y30mpT"
+      "password": "paulyashouh",
+      "id": "2"
+    },
+    {
+      "name": "Johanna",
+      "username": "Joan",
+      "email": "Johanna@gmail.com",
+      "password": "johanna",
+      "id": "3"
+    },
+    {
+      "name": "Vasilki",
+      "username": "Vasili",
+      "email": "Vasilki@gmail.com",
+      "password": "vasiliki",
+      "id": "4"
     }
   ]
 }

@@ -12,9 +12,6 @@ import MemicPage from './components/MemicPage'
  import GaruruNest from "./components/GaruruNest";
 import GameEnter from './components/GameEnter'
 
-
-
-
 function App() {
   return (
     <div>
@@ -25,11 +22,10 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
-          <Route path='/thecave' element={<TheCave />} />
-           <Route path='/memicpage' element={<MemicPage />} />
-           <Route path = "/FlamingLakePage" element = {<FlamingLakePage/>} />
-            <Route path = "/GaruruNest" element = {<GaruruNest/>} />
           {/* <Route path='/effect' element={<Effect />} /> */}
+          <Route path='button' element={<Button />} />
+          <Route path='directionbutton' element={<DirectionButton />} />
+          <Route path='countlife' element={<CountLife />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

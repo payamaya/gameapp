@@ -9,44 +9,30 @@ const Login = () => {
   const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault()
-
-    // const user = { email, password }
     const url = `http://localhost:6001/persons`
     const fetchData = async () => {
       const response = await fetch(url)
       const data = await response.json()
-
       for (let i = 0; i < data.length; i++) {
         if (data[i].email === email && data[i].password === password) {
           navigate('/playgame')
           console.log(`hello ${data[i].name} welcome to the game`)
-          return alert(`hello ${data[i].username} welcome to the game`)
+          alert(`hello ${data[i].username} welcome to the game`)
         } else {
-          console.log(`invalid email ${email}`)
+          console.log(`Inavlid ${email} adress or ${password} try again`)
           // alert(`invalid email ${email}`)
-          // break
         }
       }
-      // break
-      // console.log(data)
-
-      // try {
-      //   const response = await fetch(url)
-      //   const json = await response.json()
-      //   console.table(json)
-      // } catch (error) {
-      //   console.log('error', error)
-      // }
     }
     fetchData([])
     setEmail('')
     setPassword('')
   }
-
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
         <h3>Login</h3>
+        <label> Enter your Email</label>
         <input
           className='login-btn'
           required
@@ -54,6 +40,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <label>Password</label>
         <input
           className='login-btn'
           required

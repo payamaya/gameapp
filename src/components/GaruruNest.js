@@ -1,35 +1,25 @@
-import { useState, useEffect} from "react";
+import { useState } from 'react'
 
+const GaruruNest = () => {
+  const [Val, setVal] = useState('')
 
+  const minimum = 1
+  const maximum = 5
 
-const GaruruNest = () =>{
-    
-   const [Val ,setVal] = useState("")
-  
-   const minimum = 1;
-   const maximum = 5;
+  function randomNumber() {
+    const answer = Math.floor(Math.random() * (maximum - minimum + 1))
+    console.log(answer)
+    console.log(Val)
 
-   function randomNumber() {
+    //    help through https://stackoverflow.com
+    if (parseInt(Val) === answer) {
+      alert('du Vann')
+    } else {
+      alert('Dead')
+    }
+  }
 
-   const answer = Math.floor(Math.random() * (maximum - minimum + 1));
-   console.log(answer)
-   console.log(Val)
-
-  
-//    help through https://stackoverflow.com
-   if(parseInt(Val) === answer ){
-    alert("du Vann")
-    
-   }else{
-    alert("Dead")
-    
-   }
-
-
-   }
-
- 
-   const handleChange = (e) => {
+  const handleChange = (e) => {
     setVal(e.target.value)
   }
    
@@ -44,10 +34,8 @@ const GaruruNest = () =>{
         </label>
 
         <button onClick={randomNumber}>Get answer</button>
-
-        
     </div>
-    )
+  )
 }
 
-export default GaruruNest;
+export default GaruruNest

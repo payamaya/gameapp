@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
 .gameContainer {
     height: 100vh;
     width: 100vw;
@@ -10,7 +9,6 @@
     flex-direction: row;
     background: rgb(42, 83, 125);
     background: linear-gradient(176deg, rgba(42, 83, 125, 1) 14%, rgba(249, 89, 213, 1) 51%, rgba(237, 176, 178, 1) 92%);
-
 }
 
 .divGameText {

@@ -1,8 +1,8 @@
 
+
 import React from 'react'
 import '../styles/gameenter.css'
 import { Link } from 'react-router-dom'
-
 
 
 const GameEnter = () => {
@@ -31,14 +31,5 @@ const GameEnter = () => {
     </div>
 
 </div>
-   
-
-
-            
-    
-
-
-  )
-}
 
 export default GameEnter
