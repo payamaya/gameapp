@@ -43,7 +43,7 @@ const GaruruNest = () => {
 
       <button onClick={randomNumber}>Get answer</button>
 
-    return (
+    {/* return (
     
     <div className="garuruContainer">
         <h1>Garuru</h1>
@@ -53,7 +53,7 @@ const GaruruNest = () => {
         
         </label>
 
-        <button onClick={randomNumber}>Get answer</button>
+        <button onClick={randomNumber}>Get answer</button> */}
 
     </div>
   )
