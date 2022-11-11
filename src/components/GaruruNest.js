@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 
 
-
  const GaruruNest = () => {
    const [Val, setVal] = useState('')
 

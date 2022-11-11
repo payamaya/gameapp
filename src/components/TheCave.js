@@ -1,4 +1,5 @@
 // import CountLife from './CountLife'
+import React from "react"
 const TheCave = ({ children, reverse }) => {
   return (
     <div>
