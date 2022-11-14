@@ -136,6 +136,7 @@ const Button = ({ children, reverse }) => {
           color: state.color ? 'red' : 'green',
         }}
       >
+        <h2>
         {comunity}
       </h2>
       {state.count}

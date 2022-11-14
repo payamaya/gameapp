@@ -8,9 +8,13 @@ import PlayGame from './components/PlayGame'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
 import MemicPage from './components/MemicPage'
- import FlamingLakePage from "./components/FlamingLakePage";
- import GaruruNest from "./components/GaruruNest";
+import FlamingLakePage from "./components/FlamingLakePage";
+import GaruruNest from "./components/GaruruNest";
 import GameEnter from './components/GameEnter'
+import Button from './components/Button'
+import DirectionButton from './components/DirectionButton';
+import CountLife from './components/CountLife'
+
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />
+          <Route path='/thecave' element={<TheCave />} />
+          <Route path='/memicpage' element={<MemicPage />} />
+          <Route path='/flaminglakepage' element={<FlamingLakePage />} />
+          <Route path='/garurunest' element={<GaruruNest />} />
           {/* <Route path='/effect' element={<Effect />} /> */}
           <Route path='button' element={<Button />} />
           <Route path='directionbutton' element={<DirectionButton />} />

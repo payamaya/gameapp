@@ -30,11 +30,9 @@ const PlayGame = ({ title }) => {
             <h3 className='cardHead'>Go to Flaming Lake</h3>
             <div className='card'>
               <div className='card-backImage'></div>
-              <div className='card-frontImage'>
+              <div className='card-frontImage'>   
 
-                <Link className='memic-link' to='/flaminglakepage'>Run</Link>    
-
-                <Link className='memic-link' to='/memicpage'>
+                <Link className='memic-link' to='/flaminglakepage'>
                   Enter Lake
                 </Link>
               </div>
