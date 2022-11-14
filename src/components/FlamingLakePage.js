@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/flaminglake.css'
 
-
+        
 
 const FlamingLakePage =() =>{
 
@@ -67,3 +67,5 @@ const FlamingLakePage =() =>{
 }
 
 export default FlamingLakePage
+
+  

@@ -36,7 +36,6 @@ const Button = ({ children, reverse }) => {
   const navigate = useNavigate()
   const [direction, setDirection] = useState({
     Score: 3,
-    
   })
   if (direction.Score === 0) {
     alert('you lose')
@@ -158,7 +157,7 @@ const Button = ({ children, reverse }) => {
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'black' : 'blue',
         }}
-      >
+      <h2>
         color
       </h2>
       <button

@@ -1,6 +1,7 @@
 import '../styles/signup.css'
 // import { Link } from 'react-router-dom'
 // <Link to='/login'>sign in?</Link>
+import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -30,8 +31,7 @@ const SignUp = () => {
       })
       .then((data) => console.table(data))
       .catch((error) => console.log('Erorr'))
-  }
-
+    }
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>

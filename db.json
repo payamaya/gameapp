@@ -1,10 +1,13 @@
 {
-  "points": [ {
-    "username": "Gururu",
-    "life": 3,
-    "id": 1
-  } ],
-  "persons": [ {
+  "points": [
+    {
+      "username": "Gururu",
+      "life": 3,
+      "id": 1
+    }
+  ],
+  "persons": [
+    {
       "name": "rtrt",
       "username": "rtertewrt",
       "email": "loarte@info.se",
@@ -31,6 +34,13 @@
       "email": "Vasilki@gmail.com",
       "password": "vasiliki",
       "id": "4"
+    },
+    {
+      "name": "Magnus",
+      "username": "Erriksson",
+      "email": "magnus@info.com",
+      "password": "rr33",
+      "id": "k_YqTk0"
     }
   ]
 }
