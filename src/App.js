@@ -16,6 +16,7 @@ import Button from './components/Button'
 import DirectionButton from './components/DirectionButton'
 import CountLife from './components/CountLife'
 
+
 function App() {
   return (
     <div>
@@ -29,13 +30,14 @@ function App() {
           <Route path='/memicpage' element={<MemicPage />} />
           <Route path='/thecave' element={<TheCave />} />
           <Route path='/playgame' element={<PlayGame />} />
+
+          <Route path='/thecave' element={<TheCave />} />
+          <Route path='/memicpage' element={<MemicPage />} />
           <Route path='/flaminglakepage' element={<FlamingLakePage />} />
           <Route path='/garurunest' element={<GaruruNest />} />
           <Route path='/button' element={<Button />} />
           <Route path='/directionbutton' element={<DirectionButton />} />
           {/* <Route path='/effect' element={<Effect />} /> */}
-          <Route path='button' element={<Button />} />
-          <Route path='directionbutton' element={<DirectionButton />} />
           <Route path='countlife' element={<CountLife />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

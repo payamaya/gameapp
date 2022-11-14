@@ -3,54 +3,69 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/flaminglake.css'
 
-        const FlamingLakePage = () => {
-        const [left, setLeft] = useState(false)
-       const [right, setRight] = useState(false)
+        
 
-  const [leftThree, setLeftThree] = useState(false)
-   const [rightThree, setRightThree] = useState(false)
-  // Set Disable on the next two choice if u are right you disable what the road u passed.
+const FlamingLakePage =() =>{
 
-   const handleLeft = () => {
-     setLeft(true)
-     alert('Rätt')
-   }
+    const [left, setLeft] = useState(false)
+    const [right, setRight] = useState (false)
 
-   const handleRight = () => {
-     setRight(true)
-     alert(' Du förlorade 1 liv ')
-   }
+    const [leftThree, setLeftThree] = useState(false)
+    const [rightThree, setRightThree] = useState(false)
+    // Set Disable on the next two choice if u are right you disable what the road u passed.
 
-   const handleLeftLast = () => {
-     setLeft(true)
-     alert('Fel')
-   }
+    const handleLeft = () => {
+        setLeft(true);
+        alert("Rätt")
 
-   const handleRightLast = () => {
-     setRight(true)
-     alert(' du kom vidare Grattis ')
-   }
 
-   return (
+    }
 
-     <div className='containerlake'>
-       <div className='FlamingLake-item'>
-         <h2 className='h2'>FlamingLake</h2>
-         <button onClick={handleLeft}>Left</button>
-         <button onClick={handleRight}>Right</button>
-         <br />
+    const handleRight = () =>{
+        setRight(true);
+        alert(" Du förlorade 1 liv ")
+    }
 
-         <button onClick={handleLeft}>Left</button>
-         <button onClick={handleRight}>Right</button>
-         <br />
+    const handleLeftLast = () => {
+        setLeft(true);
+        alert("Fel")
 
-         <button onClick={handleLeftLast}>Left</button>
-         <Link className='links' to='/GaruruNest'>
-           <button onClick={handleRightLast}>Right</button>
-         </Link>
-       </div>
-       </div>
-       )
-     }  
 
- export default FlamingLakePage
+    }
+
+    const handleRightLast = () =>{
+        setRight(true);
+        alert(" du kom vidare Grattis ")
+    }
+
+
+
+    return  ( <div className="containerlake">
+    <div className="FlamingLake-item">
+         <h2 className="h2">FlamingLake</h2>
+                <button onClick={handleLeft}>Left</button>
+                <button onClick={handleRight}>Right</button>
+             <br/>
+
+
+                <button onClick={handleLeft}>Left</button>
+                <button onClick={handleRight}>Right</button>
+             <br/>
+
+
+        <button onClick={handleLeftLast}>Left</button>
+                <Link className="links" to = "/garurunest">
+        <button onClick={handleRightLast}>Right</button> </Link>
+    </div>
+
+
+</div>
+
+
+    )
+
+}
+
+export default FlamingLakePage
+
+  
