@@ -107,7 +107,7 @@ const Button = ({ children, reverse }) => {
         backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
         color: state.color ? 'red' : 'yellow',
       }}
-    >
+      >
       <p
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
@@ -129,12 +129,12 @@ const Button = ({ children, reverse }) => {
       {/* <h2>{person.afterName}</h2>
       <h3>{person.name}</h3> */}
       <button onClick={changePlayer}>Change Player</button>
-      <h2
+      <h2>
         style={{
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'red' : 'green',
         }}
-      >
+      </h2>
         <h2>
         {comunity}
       </h2>
@@ -197,7 +197,8 @@ const Button = ({ children, reverse }) => {
         Left direction.score
       </button>
     </div>
+    
   )
 }
 
-export default Button
+export default Button;

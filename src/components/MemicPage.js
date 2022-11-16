@@ -18,7 +18,7 @@ const MemicPage = () => {
             <br></br>
             Hurry, and remember, you only got 3 lives.
           </p>
-          <Link className='links' to='/countlife'>
+          <Link className='links' to='/MemicDunjan'>
             <button>Fight</button>
           </Link>
           <Link className='links' to='/FlamingLakePage'>
