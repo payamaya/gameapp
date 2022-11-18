@@ -3,13 +3,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
+  flex-direction: column;
 }
 
 .login-btn {
-  font-size: 1rem;
   color: white;
-  background-color: rgb(98, 98, 98);
   border-radius: 5px;
   border: solid 2px white;
+}
+
+
+.loginHead,
+.loginPass,
+.loginPassTwo {
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.loginPassTwo {
+  margin-right: 1rem;
+}
+
+.loginBtn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.divLogin {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.buttonLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 5rem;
+  width: 14rem;
+  background-color: lightcoral;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.6rem;
+  word-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  box-shadow: 5px 10px #888888;
 }

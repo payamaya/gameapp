@@ -1,59 +1,59 @@
-
-import { useState, useEffect } from 'react'
-
-
- const GaruruNest = () => {
-   const [Val, setVal] = useState('')
-
-   const minimum = 1
-   const maximum = 5
-
-   function randomNumber() {
-     const answer = Math.floor(Math.random() * (maximum - minimum + 1))
-     console.log(answer)
-     console.log(Val)
-
-//      help through https://stackoverflow.com
-   if (parseInt(Val) === answer) {
-       alert('du Vann')
-     } else {
-       alert('Dead')
-     }
-   }
-
-   const handleChange = (e) => {
-     setVal(e.target.value)
-   }
+import { useState } from 'react'
+import '../styles/garurunest.css'
+import Gururu from '../images/gururunest.png'
 
 
-   return (
-     <div>
-       <h2>Garuru</h2>
-       <label>
-         {' '}
-         Gissa rätt nummer för att slå Garuru
-         <br />
-         <input
-           value={Val}
-           onChange={handleChange}
-           placeholder='skriv ett nummer'
-         />
-       </label>
 
-       <button onClick={randomNumber}>Get answer</button>
 
-     {/* return (
+const GaruruNest = () => {
+  const [val, setVal] = useState('')
+
+  const minimum = 1
+  const maximum = 5
+
+  function randomNumber() {
+    const answer = Math.floor(Math.random() * (maximum - minimum + 1))
+    console.log(answer)
+    console.log(val)
+
+    //    help through https://stackoverflow.com///
+    if (parseInt(val) === answer) {
+      alert('du Vann')
+    } else {
+      alert('Dead')
+    }
+  }
+
+  const handleChange = (e) => {
+    setVal(e.target.value)
+  }
+   
+    return (
     
-     <div className="garuruContainer">
-         <h1>Garuru</h1>
-       <label className="garuruLabel"> Gissa ett nummer mellan 1-5 för att slå Garuru
-             <br/>
-         <input value={Val} onChange={handleChange} placeholder="skriv ett nummer" />
-        
-         </label>
+    <div className="garuruContainer">
+        <h1 className='garuruHead'>GarUrU NesT</h1>
 
-         <button onClick={randomNumber}>Get answer</button> */}
+          <div className='garuruDiv'>
+                  <div className="garuruLabel">
+                      <label className="garuruLabel"> Guess a number between 1-5 to defeat Garuru!</label>
+                    </div>
 
+                  <div className='garuruInput'>
+                      <input  value={val} onChange={handleChange} placeholder="skriv ett nummer" />
+                  </div>   
+                  <div className='garuruButton'>
+                      <button className='buttonGaruru' onClick={randomNumber}>Get answer</button>
+                  </div>
+
+                  <div className='cardNest'>
+                    <div  className='imgCard'>
+                      <img className='imgCard'  src={Gururu} /> 
+                    </div>
+                  </div>
+          </div>
+
+
+          
     </div>
    )
  }
