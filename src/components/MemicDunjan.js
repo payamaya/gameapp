@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const MemicDunjan = () =>{
     
 
-    //  https://stackoverflow.com/questions/51839708/compare-part-of-url-with-a-variable
+    //  https://stackoverflow.com/questions/51839708/compare-part-of-url-with-a-variable  gälle url delen
 
 
     const lastPartOfUrl = window.location.href.split('/').pop()

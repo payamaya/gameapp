@@ -8,10 +8,10 @@ const MemicChoice = () =>{
         
         <div>
             <div>
-                <h2>MemicChoice</h2>
-                <h2>Welcome to my dunjan, you are now locked in my cage </h2>
+                <h2> Welcome to my dunjan !!</h2>
+                
 
-        <p>My name is Liovanda im the memic.
+        <p> My name is Liovanda im the memic.
             thousands of years have I been here in memic forest. And the best thing i can do is same as you!
             now the choice is yours to make!
 
