@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 
 const MemicChoice = () =>{
+ 
+ 
     return(
+
+        
         <div>
             <div>
                 <h2>MemicChoice</h2>
@@ -14,17 +18,13 @@ const MemicChoice = () =>{
 
            
         </p>
-                <ul>
-                    <li>
-                        <Link className="Memic" to ="/MemicDunjan/p1">p1</Link>
-                    </li>
-                </ul>
+                
+                       <button ><Link className="Memic" to ="/MemicDunjan/p1">Try to open cage</Link></button> 
+                
 
-                <ul>
-                    <li>
-                        <Link className="Memic" to ="/MemicDunjan/p2">p2</Link>
-                    </li>
-                </ul>
+                
+                       <button><Link className="Memic" to ="/MemicDunjan/p2">Fight</Link></button> 
+                
 
                 
             </div>

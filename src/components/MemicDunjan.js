@@ -1,14 +1,24 @@
-import { useParams } from "react-router";
+import { Link } from "react-router-dom"
 
 const MemicDunjan = () =>{
-    const params = useParams();
-//  <---- This was to see what page id i was on !! 
-   
-    return <div>
-   <p>{params.pageId} </p>  
-   <p>{params.pageId}</p>  
-        
+    
 
-    </div>
+    //  https://stackoverflow.com/questions/51839708/compare-part-of-url-with-a-variable
+
+
+    const lastPartOfUrl = window.location.href.split('/').pop()
+    
+   
+    
+    
+    if (lastPartOfUrl === "p1") {
+      return <p>Congrats you made it!  <Link to ="./FlamingLakePage" ><button >continue</button></Link> </p>
+    }else if(lastPartOfUrl === "p2"){
+        return <p>You lost -1  <Link to ="./MemicDunjan" ><button >Try Again</button></Link></p>
+    }else alert("something went wrong ")
+    
+
+    
+   
 }
 export default MemicDunjan;

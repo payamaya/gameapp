@@ -37,10 +37,15 @@ function App() {
 
           <Route path='/thecave' element={<TheCave />} />
           
+
           
-          
-          
+          <Route path = '/MemicDunjan/p1/FlamingLakePage' element={<FlamingLakePage/>}/>
+          <Route path = '/MemicDunjan/p2/MemicDunjan' element={<MemicChoice/>}/>
           <Route path='/MemicDunjan/:pageId' element={<MemicDunjan/>} />
+
+
+
+
           <Route  path='/MemicDunjan' element={<MemicChoice/>}/>
 
 
