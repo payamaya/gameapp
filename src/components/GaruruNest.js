@@ -16,7 +16,7 @@ const GaruruNest = () => {
     console.log(answer)
     console.log(val)
 
-    //    help through https://stackoverflow.com
+    //    help through https://stackoverflow.com//
     if (parseInt(val) === answer) {
       alert('du Vann')
     } else {
