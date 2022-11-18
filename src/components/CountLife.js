@@ -53,7 +53,7 @@ const CountLife = ({ children, reverse }) => {
   }
   useEffect(() => {
     getUsers()
-  }, [''])
+  })
   return (
     <div className='countlife-container'>
       <h3

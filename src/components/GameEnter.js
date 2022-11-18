@@ -1,13 +1,9 @@
-
-
 import React from 'react'
 import '../styles/gameenter.css'
 import { Link } from 'react-router-dom'
 
-
 const GameEnter = () => {
   return (
-
     <div className='gameContainer'>
 
     <div id="loading-wrapper">
@@ -21,13 +17,17 @@ const GameEnter = () => {
         
 
         <div className='gameButtons'>
-            <Link to='/login'> <button className='buttonsGame' href="javascript:void(0);" >Log In</button></Link>
-            <Link to='/signup'> <button  className='buttonsGame' href="javascript:void(0);">Sign Up</button></Link>
+          <Link to='/login'>
+            {' '}
+            <button className='buttonsGame'>Log In</button>
+          </Link>
+          <Link to='/signup'>
+            {' '}
+            <button className='buttonsGame'>Sign Up</button>
+          </Link>
         </div>
-        
+      </div>
     </div>
-
-</div>
   )
 }
 export default GameEnter

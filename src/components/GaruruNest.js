@@ -55,7 +55,7 @@ const GaruruNest = () => {
 
           
     </div>
-  )
-}
+   )
+ }
 
-export default GaruruNest
+ export default GaruruNest

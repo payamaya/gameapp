@@ -40,13 +40,9 @@ const startPage = () => {
           <Link className='links' to='/memicpage'>
 
             <button className='buttonStart'>Enter</button>
-
           </Link>
         </div>
       </div>
-
-      
-      
     </div>
   )
 }
