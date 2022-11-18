@@ -17,7 +17,7 @@ const GameEnter = () => {
         
 
     <div className='divGameText'>
-        <h1 className='divGameHead'>Memic Forest of Gururu</h1>
+        <h1 className='divGameHead'>MemIc Forest <br></br>oF GUrUrU</h1>
         
 
         <div className='gameButtons'>

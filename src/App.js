@@ -21,8 +21,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<StartPage />} />
-          <Route path='/gameenter' element={<GameEnter />} />
+          <Route path='/' element={<GameEnter />} />
+          <Route path='/startpage' element={<StartPage />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/playgame' element={<PlayGame />} />

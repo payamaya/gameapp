@@ -135,7 +135,7 @@ const Button = ({ children, reverse }) => {
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'red' : 'green',
         }}
-      >
+      ></h2>
         <h2>
         {comunity}
       </h2>
@@ -158,14 +158,14 @@ const Button = ({ children, reverse }) => {
           backgroundColor: state.backgroundColor ? 'lightpink' : 'lightgreen',
           color: state.color ? 'black' : 'blue',
         }}
-      >
+      <h2>
         color
       </h2>
       <button
         disabled={state.count <= 0}
         onClick={changePlayer}
         onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
-        // onMouseUp={changeComunity}
+      
       >
         Direction Right
       </button>
@@ -174,7 +174,7 @@ const Button = ({ children, reverse }) => {
         disabled={state.count <= 0}
         onClick={changePlayer}
         onMouseDown={() => dispatch({ type: 'newBackgroundColor' })}
-        // onMouseUp={changeComunity}
+        
       >
         Direction Left
       </button>

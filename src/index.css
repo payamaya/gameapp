@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Xanh+Mono:ital@0;1&display=swap');
+
 
 *,
 ::before,
@@ -9,24 +12,6 @@
   box-sizing: border-box;
 }
 
-
-/*body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.container {
-  padding: 20rem;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-}*/
-
 .container2 {
   padding: 10rem;
   font-size: 5rem;
@@ -34,37 +19,6 @@
   justify-content: center;
   align-items: center;
   align-content: space-around;
-}
-
-/** {
-  padding: 0;
-  margin: 0;
-
-}*/
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-h1 {
-  font-size: 5rem;
-  color: rgb(0, 0, 0);
-  margin-top: 10rem;
-}
-
-.textStart {
-  display: flex;
-  text-align: center;
-  margin-top: 8rem;
-  font-size: 2.5rem;
-  color: rgb(0, 0, 0);
-  line-height: 5rem;
-  text-align: center;
 }
 
 
