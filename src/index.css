@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Xanh+Mono:ital@0;1&display=swap');
+
 
 *,
 ::before,
@@ -9,19 +12,14 @@
   box-sizing: border-box;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  height: 100vh;
+.container2 {
+  padding: 10rem;
+  font-size: 5rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: space-around;
 }
-
 
 
 @keyframes scale {

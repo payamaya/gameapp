@@ -28,9 +28,7 @@ const DirectionButton = ({ children, reverse }) => {
         [item]: action === 'up' ? direction[item] + 1 : direction[item] - 1,
       }
     })
-    // if (Score == 3) {
-    //   alert('error')
-    // }
+   
   }
   return (
     <div

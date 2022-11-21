@@ -17,8 +17,6 @@ const FlamingLakePage =() =>{
     const handleLeft = () => {
         setLeft(true);
         alert("Rätt")
-
-
     }
 
     const handleRight = () =>{
@@ -29,8 +27,6 @@ const FlamingLakePage =() =>{
     const handleLeftLast = () => {
         setLeft(true);
         alert("Fel")
-
-
     }
 
     const handleRightLast = () =>{
@@ -38,27 +34,90 @@ const FlamingLakePage =() =>{
         alert(" du kom vidare Grattis ")
     }
 
+    return  ( 
+    
+    
+    
+    <div className="containerlake">
+        <div className="FlamingLake-item">
+                        <h2 className="h2">FlaMinG LaKe</h2>
+
+                        <p className="textFlame"> You have to make three choices in order to pass <br></br>
+                        through Flaming Lake. Will it be right or left?</p>
 
 
-    return  ( <div className="containerlake">
-    <div className="FlamingLake-item">
-         <h2 className="h2">FlamingLake</h2>
-                <button onClick={handleLeft}>Left</button>
-                <button onClick={handleRight}>Right</button>
-             <br/>
+                <div className="buttonFlameDiv">
+                        <div className="btnFlame">
+                                <button className="flameBtn" onClick={handleLeft}>Left</button>
+                                <button className="flameBtn" onClick={handleRight}>Right</button>
+                        </div>
+                            
+                        <div className="btnFlame">
+                                <button className="flameBtn" onClick={handleLeft}>Left</button>
+                                <button className="flameBtn" onClick={handleRight}>Right</button>
+                        </div>
 
+                        <div className="btnFlame">  
+                                <button className="flameBtn" onClick={handleLeftLast}>Left</button>
+                                        <Link className="links" to = "/garurunest">
+                                <button className="flameBtn" onClick={handleRightLast}>Right</button> </Link>
+                        </div> 
 
-                <button onClick={handleLeft}>Left</button>
-                <button onClick={handleRight}>Right</button>
-             <br/>
+                </div>
+        </div>
 
-
-        <button onClick={handleLeftLast}>Left</button>
-                <Link className="links" to = "/garurunest">
-        <button onClick={handleRightLast}>Right</button> </Link>
-    </div>
-
-
+<div class="fire">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
 </div>
 
 

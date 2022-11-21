@@ -1,7 +1,4 @@
 import '../styles/signup.css'
-// import { Link } from 'react-router-dom'
-// <Link to='/login'>sign in?</Link>
-import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -31,74 +28,91 @@ const SignUp = () => {
       })
       .then((data) => console.table(data))
       .catch((error) => console.log('Erorr'))
-    }
+  }
+
   return (
-    <div className='container'>
-      <form onSubmit={handleSubmit}>
-        <h3>Sign Up</h3>
+    <div className='containerSign'>
+              
+                <form onSubmit={handleSubmit}>
+
+                    <div className='mb-3'>  
+
+                         <div className='textSign'>
+                               <label>First name </label>
+                          </div>
+
+                              <div className='inputDiv'>
+                                  <input
+                                    className='login-btn'
+                                    type='text'
+                                    required
+                                    placeholder='First name'
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                  />
+                              </div>
+                    </div>
+
+
         <div className='mb-3'>
-          <label>First name </label>
-          <input
-            className='login-btn'
-            type='text'
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            // className='form-control'
-            // placeholder='First name'
-          />
+                  <div className='textSign'>
+                    <label >Last name</label>
+                  </div>
+                            <div className='inputDiv'>
+                                  
+                                        <input
+                                          className='login-btn'
+                                          type='text'
+                                          required
+                                          placeholder='Last name'
+                                          value={username}
+                                          onChange={(e) => setUserName(e.target.value)}
+                                        />
+                             
+              </div>
+        </div>
+
+
+        <div className='mb-3'>
+                <div className='textSign'>
+                  <label >Email</label>
+                </div>
+                        <div className='inputDiv'>
+                                <input
+                                  className='login-btn'
+                                  required
+                                  placeholder='@example.com'
+                                  value={email}
+                                  onChange={(e) => setEmail(e.target.value)}
+                                  type='email'
+                                />
+                        </div>
         </div>
         <div className='mb-3'>
-          <label>Last name</label>
-          <input
-            className='login-btn'
-            type='text'
-            required
-            value={username}
-            onChange={(e) => setUserName(e.target.value)}
-            // className='form-control'
-            // placeholder='Last name'
-          />
+              <div className='textSign'>
+                <label >Password</label>
+              </div>  
+                        <div className='inputDiv'>
+                                  <input
+                                      className='login-btn'
+                                      required
+                                      value={password}
+                                      placeholder='password'
+                                      onChange={(e) => setPassword(e.target.value)}
+                                      type='password'
+                                  />
+                          </div>
         </div>
-        <div className='mb-3'>
-          <label>Email address</label>
-          <input
-            className='login-btn'
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type='email'
-            // className='form-control'
-            // placeholder='Enter email'
-          />
+
+
+        <div className='btnLogin'>
+                <button
+                        className='btnLogin'
+                        onSubmit={handleSubmit}
+                      >
+                  Sign Up ⬆
+                </button>
         </div>
-        <div className='mb-3'>
-          <label>Password</label>
-          <input
-            className='login-btn'
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            type='password'
-            // className='form-control'
-            // placeholder='Enter password'
-          />
-        </div>
-        <div className='d-grid'>
-          <button
-            className='login-btn'
-            // onClick={redirect}
-            // to='/login'
-            // type='button'
-            onSubmit={handleSubmit}
-            // className='btn btn-primary'
-          >
-            Sign Up
-          </button>
-        </div>
-        {/* <p className='forgot-password text-right'>
-          Already registered <Link to='/login'>sign in?</Link>
-        </p> */}
       </form>
     </div>
   )
