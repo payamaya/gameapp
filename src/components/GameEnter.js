@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/gameenter.css'
+import '../styles/gameEnter.css'
 import { Link } from 'react-router-dom'
 
 const GameEnter = () => {
