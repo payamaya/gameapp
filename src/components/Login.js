@@ -16,9 +16,13 @@ const Login = () => {
       const data = await response.json();
       for (let i = 0; i < data.length; i++) {
         if (data[i].email === email && data[i].password === password) {
-          navigate("/playgame");
-          console.log(`hello ${data[i].name} welcome to the game`);
-          alert(`hello ${data[i].username} welcome to the game`);
+
+          navigate('/memicpage')
+          console.log(`hello ${data[i].name} welcome to the game`)
+          alert(`hello ${data[i].username} welcome to the game`)
+
+        
+
           localStorage.setItem("life", JSON.stringify(data[i].life));
         } else {
           console.log(`Inavlid ${email} adress or ${password} try again`);

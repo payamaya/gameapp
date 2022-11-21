@@ -1,13 +1,5 @@
 {
-  "points": [
-    {
-      "username": "Gururu",
-      "life": 3,
-      "id": 1
-    }
-  ],
-  "persons": [
-    {
+  "persons": [ {
       "name": "rtrt",
       "username": "rtertewrt",
       "email": "loarte@info.se",
@@ -16,32 +8,19 @@
       "id": "1"
     },
     {
-      "name": "Paul",
-      "username": "Peter",
-      "email": "paulyashou81@gmail.com",
-      "password": "paulyashouh",
-      "id": "2"
+      "name": "Viki",
+      "username": "p",
+      "email": "viki@gmail.com",
+      "password": "123456",
+      "id": "bi60g9q"
     },
     {
-      "name": "Johanna",
-      "username": "Joan",
-      "email": "Johanna@gmail.com",
-      "password": "johanna",
-      "id": "3"
-    },
-    {
-      "name": "Vasilki",
-      "username": "Vasili",
-      "email": "Vasilki@gmail.com",
-      "password": "vasiliki",
-      "id": "4"
-    },
-    {
-      "name": "Magnus",
-      "username": "Erriksson",
-      "email": "magnus@info.com",
-      "password": "rr33",
-      "id": "k_YqTk0"
+      "name": "sofia",
+      "username": "ola",
+      "email": "sofia@gmail.com",
+      "password": "22233",
+      "life": 3,
+      "id": "wFaKE3f"
     }
   ]
 }

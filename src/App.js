@@ -33,7 +33,6 @@ function App() {
           <Route path='/memicpage' element={<MemicPage />} />
           
           <Route path='/playgame' element={<PlayGame />} />
-
           <Route path='/thecave' element={<TheCave />} />
           
 
