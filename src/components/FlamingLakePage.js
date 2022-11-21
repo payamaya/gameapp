@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/FlamingLake.css";
+import "../styles/flaminglake.css";
 
 const FlamingLakePage = () => {
   const [left, setLeft] = useState(false);
