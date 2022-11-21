@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import '../styles/flaminglake.css'
+import '../styles/FlamingLake.css'
 
         
 

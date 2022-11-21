@@ -6,6 +6,7 @@ import '../styles/memicpage.css'
 
 const MemicPage = () => {
   return (
+
    <div className='containerMemic'>
       <div className='memicDiv'>
                                 <div className='textMemic'>
@@ -35,6 +36,7 @@ const MemicPage = () => {
                                 </Link>
                         </div>
                 </div> 
+
 
     </div>
   </div>

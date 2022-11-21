@@ -1,6 +1,24 @@
+import { Link } from "react-router-dom"
+
 const MemicDunjan = () =>{
-    return <div>
-        <h2>Welcome to my dunjan, you are now locked in my cage </h2>
-    </div>
+    
+
+    //  https://stackoverflow.com/questions/51839708/compare-part-of-url-with-a-variable  gälle url delen
+
+
+    const lastPartOfUrl = window.location.href.split('/').pop()
+    
+   
+    
+    
+    if (lastPartOfUrl === "p1") {
+      return <p>Congrats you made it!  <Link to ="./FlamingLakePage" ><button >continue</button></Link> </p>
+    }else if(lastPartOfUrl === "p2"){
+        return <p>You lost -1  <Link to ="./MemicDunjan" ><button >Try Again</button></Link></p>
+    }else alert("something went wrong ")
+    
+
+    
+   
 }
 export default MemicDunjan;

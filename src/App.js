@@ -9,6 +9,10 @@ import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
 import Audio from './components/Audio'
 import MemicPage from './components/MemicPage'
+
+import MemicDunjan from './components/MemicDunjan'
+import MemicChoice from './components/MemicChoice'
+
 import FlamingLakePage from './components/FlamingLakePage'
 import GaruruNest from './components/GaruruNest'
 import GameEnter from './components/GameEnter'
@@ -27,11 +31,24 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/memicpage' element={<MemicPage />} />
-          <Route path='/thecave' element={<TheCave />} />
+          
           <Route path='/playgame' element={<PlayGame />} />
 
           <Route path='/thecave' element={<TheCave />} />
-          <Route path='/memicpage' element={<MemicPage />} />
+          
+
+          
+          <Route path = '/MemicDunjan/p1/FlamingLakePage' element={<FlamingLakePage/>}/>
+          <Route path = '/MemicDunjan/p2/MemicDunjan' element={<MemicChoice/>}/>
+          <Route path='/MemicDunjan/:pageId' element={<MemicDunjan/>} />
+
+
+
+
+          <Route  path='/MemicDunjan' element={<MemicChoice/>}/>
+
+
+
           <Route path='/flaminglakepage' element={<FlamingLakePage />} />
           <Route path='/garurunest' element={<GaruruNest />} />
           <Route path='/button' element={<Button />} />
