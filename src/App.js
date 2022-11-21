@@ -29,7 +29,6 @@ function App() {
           <Route path='/memicpage' element={<MemicPage />} />
           <Route path='/thecave' element={<TheCave />} />
           <Route path='/playgame' element={<PlayGame />} />
-
           <Route path='/thecave' element={<TheCave />} />
           <Route path='/memicpage' element={<MemicPage />} />
           <Route path='/flaminglakepage' element={<FlamingLakePage />} />

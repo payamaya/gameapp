@@ -7,11 +7,12 @@ const SignUp = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+   //const [life, setLife] = useState(3)
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const user = { name, username, email, password }
+    const user = { name, username, email, password}
 
     console.log(user)
     fetch('http://localhost:6001/persons', {

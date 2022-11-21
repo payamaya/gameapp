@@ -23,7 +23,7 @@ form {
   /*ÄNDRA KLASSEN SEN SÅ DET BLIR LOGIK*/
   border: 3px solid black;
   border-style: dotted;
-  background-color: rgb(226, 228, 237);
+  background-color: rgb(156, 157, 162);
   display: flex;
   justify-content: center;
   height: 4rem;
@@ -36,6 +36,7 @@ form {
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
   text-shadow: 3px 5px darkslategray;
+  color: white;
 }
 
 .btnLogin {
