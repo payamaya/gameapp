@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import '../styles/countlife.css'
 import { Link } from 'react-router-dom'
 
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'newBackgroundColor':
@@ -43,17 +42,17 @@ const CountLife = ({ children, reverse }) => {
     }
   }
 
-  const url = `http://localhost:6001/points`
+  const url = `http://localhost:6001/persons`
   const [users, setUsers] = useState([])
   const getUsers = async () => {
     const response = await fetch(url)
-    const users = await response.json()
-    setUsers(users)
-    console.log(users)
+    const persons = await response.json()
+    setUsers(persons)
+    console.log(persons)
   }
   useEffect(() => {
     getUsers()
-  })
+  }, [])
   return (
     <div className='countlife-container'>
       <h3
