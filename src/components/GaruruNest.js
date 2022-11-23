@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import '../styles/garurunest.css'
 import Gururu from '../images/gururunest.png'
-import React from 'react'
-
-
 
 const GaruruNest = () => {
   const [val, setVal] = useState('')
-  
   const minimum = 1
   const maximum = 5
-  
   function randomNumber() {
     const answer = Math.floor(Math.random() * (maximum - minimum + 1))
     console.log(answer)
@@ -28,35 +23,36 @@ const GaruruNest = () => {
   const handleChange = (e) => {
     setVal(e.target.value)
   }
-   
-    return (
-    
-    <div className="garuruContainer">
-        <h1 className='garuruHead'>GarUrU NesT</h1>
 
-          <div className='garuruDiv'>
-                  <div className="garuruLabel">
-                      <label className="garuruLabel"> Guess a number between 1-5 to defeat Garuru!</label>
-                    </div>
-
-                  <div className='garuruInput'>
-                      <input  value={val}  pattern='[1,2,3,4,5]' onChange={handleChange} placeholder="skriv nr" />
-                  </div>   
-                  <div className='garuruButton'>
-                      <button className='buttonGaruru'  onClick={randomNumber}>Get answer</button>
-                  </div>
-
-                  <div className='cardNest'>
-                    <div  className='imgCard'>
-                      <img className='imgCard' alt="garuru" src={Gururu} /> 
-                    </div>
-                  </div>
+  return (
+    <div className='garuruContainer'>
+      <h1 className='garuruHead'>GarUrU NesT</h1>
+      <div className='garuruDiv'>
+        <div className='garuruLabel'>
+          <label className='garuruLabel'>
+            Guess a number between 1-5 to defeat Garuru!
+          </label>
+        </div>
+        <div className='garuruInput'>
+          <input
+            value={val}
+            onChange={handleChange}
+            placeholder='skriv ett nummer'
+          />
+        </div>
+        <div className='garuruButton'>
+          <button className='buttonGaruru' onClick={randomNumber}>
+            Get answer
+          </button>
+        </div>
+        <div className='cardNest'>
+          <div className='imgCard'>
+            <img className='imgCard' src={Gururu} alt='' />
           </div>
-
-
-          
+        </div>
+      </div>
     </div>
-   )
- }
+  )
+}
 
- export default GaruruNest
+export default GaruruNest
