@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Xanh+Mono:ital@0;1&display=swap');
 
-
 *,
 ::before,
 ::after {
@@ -20,7 +19,6 @@
   align-items: center;
   align-content: space-around;
 }
-
 
 @keyframes scale {
   100% {

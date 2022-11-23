@@ -1,0 +1,13 @@
+.containerlaketwo {
+  background: linear-gradient(
+    180deg,
+    rgba(225, 154, 22, 0.97) 5%,
+    rgb(186, 100, 2) 30%,
+    rgb(128, 55, 3) 56%,
+    rgb(77, 1, 1) 88%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

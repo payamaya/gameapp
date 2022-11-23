@@ -1,26 +1,12 @@
 {
-  "persons": [ {
-      "name": "rtrt",
-      "username": "rtertewrt",
-      "email": "loarte@info.se",
-      "password": "2233rr",
+  "persons": [
+    {
+      "name": "Paul",
+      "username": "payamaya",
+      "email": "paulyashou81@gmail.com",
+      "password": "123",
       "life": 3,
       "id": "1"
-    },
-    {
-      "name": "Viki",
-      "username": "p",
-      "email": "viki@gmail.com",
-      "password": "123456",
-      "id": "bi60g9q"
-    },
-    {
-      "name": "sofia",
-      "username": "ola",
-      "email": "sofia@gmail.com",
-      "password": "22233",
-      "life": 3,
-      "id": "wFaKE3f"
     }
   ]
 }
