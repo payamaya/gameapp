@@ -73,7 +73,7 @@ h1.userlife {
   top: 0;
   margin: 3rem;
   font-size: 3rem;
-  justify-content: start;
+  justify-content: flex-start;
 }
 h1.userlife {
   border: 5px solid black;

@@ -4,7 +4,7 @@ import '../styles/memicpage.css'
 
 const MemicPage = () => {
   return (
-   <div className='containerMemic'>
+    <div className='containerMemic'>
       <div className='memicDiv'>
         <div className='textMemic'>
           <h2 className='memicHead'>MemIc Forest</h2>
@@ -29,13 +29,13 @@ const MemicPage = () => {
             </Link>
           </div>
 
-                        <div className='memicButton'>
-                                <Link className='links' to='/playgame'>
-                                    <button className='memicRun'>Run</button>
-                                </Link>
-                        </div>
-                </div> 
-
+          <div className='memicButton'>
+            <Link className='links' to='/playgame'>
+              <button className='memicRun'>Run</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
