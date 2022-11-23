@@ -5,6 +5,8 @@ import '../styles/memicpage.css'
 
 
 const MemicPage = () => {
+
+        
   return (
 
    <div className='containerMemic'>

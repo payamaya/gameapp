@@ -136,7 +136,7 @@ const Button = ({ children, reverse }) => {
         }}
 
       
-      ></h2>
+      </h2>
 
         <h2>
         {comunity}

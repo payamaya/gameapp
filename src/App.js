@@ -7,7 +7,7 @@ import PlayGame from './components/PlayGame'
 // import Effect from './components/Effect'
 import NotFound from './components/NotFound'
 import TheCave from './components/TheCave'
-import Audio from './components/Audio'
+
 import MemicPage from './components/MemicPage'
 
 import MemicDunjan from './components/MemicDunjan'
@@ -21,9 +21,14 @@ import DirectionButton from './components/DirectionButton'
 import CountLife from './components/CountLife'
 
 
+
 function App() {
+
+
   return (
     <div>
+
+    
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<GameEnter />} />
@@ -31,9 +36,9 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/memicpage' element={<MemicPage />} />
-          
           <Route path='/playgame' element={<PlayGame />} />
           <Route path='/thecave' element={<TheCave />} />
+          
           
 
           

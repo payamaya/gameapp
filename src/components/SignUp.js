@@ -1,6 +1,8 @@
+import React from 'react'
 import '../styles/signup.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 
 const SignUp = () => {
   const [username, setUserName] = useState('')
@@ -32,26 +34,28 @@ const SignUp = () => {
   }
 
   return (
-    <div className='containerSign'>
+<div className='containerSign'>
               
-                <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
 
                     <div className='mb-3'>  
 
                          <div className='textSign'>
                                <label>First name </label>
-                          </div>
-
-                              <div className='inputDiv'>
-                                  <input
-                                    className='login-btn'
-                                    type='text'
-                                    required
-                                    placeholder='First name'
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                  />
                               </div>
+
+                                  <div className='inputDiv'>
+                                      <input
+                                        className='login-btn'
+                                        type='text'
+                                        required
+                                        placeholder='First name'
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                    />
+
+                                    
+                          </div>
                     </div>
 
 
@@ -114,8 +118,10 @@ const SignUp = () => {
                   Sign Up ⬆
                 </button>
         </div>
-      </form>
-    </div>
+    </form>
+</div>
+
+
   )
 }
 export default SignUp
