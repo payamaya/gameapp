@@ -21,22 +21,32 @@ const ButtonLife = ({ para, title, link }) => {
   useEffect(() => {
     window.localStorage.setItem('life', userLife)
     if (localStorage.life < 1) {
+      alert(`YOU LOSE ${userLife}`)
       navigate('/startpage')
+      if (window.confirm('Do you want to play again then click cancel?')) {
+        window.open('/')
+      }
     }
   }, [userLife])
 
   const handleLeft = () => {
     setLeft(true)
     alert(`Rätt val Du har ${userLife} liv kvar`)
+    setUserLife(userLife - 1)
+    // if (left === true) {
+    //   setLeft(true)
+    // } else {
+    //   setLeft(false)
+    // }
   }
   const handleRight = () => {
     setRight(true)
-    alert(`Du har ${userLife - 1} liv kvar`)
+    alert(`Du har förlorat ett liv, ta rätt val`)
     setUserLife(userLife - 1)
-    if (setUserLife > 1) {
-      alert(`YOU LOSE ${userLife}`)
+    if (setUserLife < 1) {
       navigate('/playgame')
     }
+
     console.log(userLife - 1)
   }
   return (

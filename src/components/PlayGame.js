@@ -17,7 +17,7 @@ const PlayGame = ({ title }) => {
             <div className='card'>
               <div className='card-back'></div>
               <div className='card-front'>
-                <Link className='thecave-link' to='/thecave'>
+                <Link className='thecave-link' to='/memicchoice'>
                   Enter Cave
                 </Link>
               </div>

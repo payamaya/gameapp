@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/startpage.css'
-import Audio from './Audio'
+import '../styles/button.css'
 import Sharklake from '../images/sharklake.png'
 import Gururu from '../images/gururunest.png'
 import Forest from '../images/forestcard.png'

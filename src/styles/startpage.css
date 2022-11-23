@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
-
-
 .container {
   width: 100vw;
   min-height: 100vh;
   background: rgb(2, 10, 46);
-  background: linear-gradient(180deg, rgba(2, 10, 46, 1) 9%, rgba(4, 21, 100, 1) 33%, rgba(6, 33, 157, 1) 57%, rgba(9, 46, 215, 1) 85%);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 10, 46, 1) 9%,
+    rgba(4, 21, 100, 1) 33%,
+    rgba(6, 33, 157, 1) 57%,
+    rgba(9, 46, 215, 1) 85%
+  );
   background: cover;
 }
 
 .headStart {
-  font-family: 'Major Mono Display',
-    monospace;
+  font-family: 'Major Mono Display', monospace;
   text-shadow: 5px 5px rgb(207, 207, 214);
   margin-top: 5rem;
   font-size: 5rem;
@@ -39,35 +42,7 @@
   margin: 5rem;
 }
 
-.cardContainer>div {
+.cardContainer > div {
   margin-top: 2rem;
   margin-bottom: -2rem;
-}
-
-.imgCard {
-  height: 25rem;
-  width: 20rem;
-  margin-left: 2rem;
-  animation: blink 5s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-    transform: scale(2);
-  }
-
-  51% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  80% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
