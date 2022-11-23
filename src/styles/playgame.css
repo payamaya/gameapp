@@ -106,7 +106,7 @@
 }
 
 .containerCard {
-  display: table;
+  display: flex;
   flex-direction: column;
   margin-top: 5rem;
 }
@@ -182,4 +182,62 @@
   justify-content: center;
   margin-top: 5px;
   font-size: 2rem;
+}
+
+/*--- MEDIA QUERIES----*/
+
+
+/*--- Mobiltelefoner----*/
+
+@media screen and (max-width: 576px) {
+
+  .divContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .containerCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .divCardGame {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cardHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .headGame {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 1rem;
+  }
+
+  .playGame {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 7rem;
+  }
+
+
 }

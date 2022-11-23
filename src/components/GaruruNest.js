@@ -10,15 +10,16 @@ const GaruruNest = () => {
     const answer = Math.floor(Math.random() * (maximum - minimum + 1))
     console.log(answer)
     console.log(val)
-
+    
     //    help through https://stackoverflow.com///
     if (parseInt(val) === answer) {
       alert('du Vann')
     } else {
       alert('Dead')
     }
+    
   }
-
+  
   const handleChange = (e) => {
     setVal(e.target.value)
   }

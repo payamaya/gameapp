@@ -8,7 +8,9 @@ import Forest from '../images/forestcard.png'
 const startPage = () => {
   window.localStorage.setItem('life', '3')
   return (
+
     <div className='container'>
+   
       <div className='startContainer'>
         <h1 className='headStart'> WeLcoMe To The ADventUre </h1>
         <p className='startGameText'>
@@ -40,6 +42,7 @@ const startPage = () => {
       </div>
     </div>
   )
-}
+  }
+
 
 export default startPage

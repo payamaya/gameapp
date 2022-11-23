@@ -21,7 +21,10 @@ import ButtonLife from './components/ButtonLife'
 import FlamingLakeTwo from './components/FlamingLakeTwo'
 import FlamingLakeThree from './components/FlamingLakeThree'
 
+
 function App() {
+
+
   return (
     <div>
       {/* <Audio></Audio> */}

@@ -1,6 +1,8 @@
+import React from 'react'
 import '../styles/signup.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 
 const SignUp = () => {
   const [username, setUserName] = useState('')
@@ -99,8 +101,10 @@ const SignUp = () => {
             Sign Up ⬆
           </button>
         </div>
-      </form>
-    </div>
+    </form>
+</div>
+
+
   )
 }
 export default SignUp

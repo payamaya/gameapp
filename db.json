@@ -1,12 +1,10 @@
 {
-  "persons": [
-    {
-      "name": "Paul",
-      "username": "payamaya",
-      "email": "paulyashou81@gmail.com",
-      "password": "123",
-      "life": 3,
-      "id": "1"
-    }
-  ]
+  "persons": [ {
+    "name": "Paul",
+    "username": "payamaya",
+    "email": "paulyashou81@gmail.com",
+    "password": "123",
+    "life": 3,
+    "id": "1"
+  } ]
 }

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import '../styles/memicpage.css'
 
 const MemicPage = () => {
+
+        
   return (
     <div className='containerMemic'>
       <div className='memicDiv'>

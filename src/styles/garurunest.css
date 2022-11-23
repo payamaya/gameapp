@@ -1,12 +1,10 @@
 .garuruContainer {
   background: rgb(32, 15, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(32, 15, 0, 1) 10%,
-    rgba(91, 43, 3, 1) 35%,
-    rgba(134, 64, 3, 1) 59%,
-    rgba(237, 113, 5, 1) 85%
-  );
+  background: linear-gradient(180deg,
+      rgba(32, 15, 0, 1) 10%,
+      rgba(91, 43, 3, 1) 35%,
+      rgba(134, 64, 3, 1) 59%,
+      rgba(237, 113, 5, 1) 85%);
   min-height: 150vh;
   display: flex;
   align-items: center;
@@ -46,9 +44,11 @@
   font-size: 2rem;
 }
 
+
 input {
   font-size: 1.5rem;
 }
+
 
 ::placeholder {
   text-align: center;
@@ -77,7 +77,7 @@ input {
   margin: 5rem;
 }
 
-.cardContainer > div {
+.cardContainer>div {
   margin-top: 2rem;
   margin-bottom: -2rem;
 }
@@ -107,5 +107,43 @@ input {
   60% {
     transform: scale(0);
     opacity: 1;
+  }
+}
+
+/*--- Mobiltelefoner----*/
+
+@media screen and (max-width: 576px) {
+
+  .garuruContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .garuruHead {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10rem;
+  }
+
+  .garuruLabel {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+  }
+
+  .cardNest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgCard {
+    height: 20rem;
+    width: 15rem;
   }
 }
