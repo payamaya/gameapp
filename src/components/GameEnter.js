@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/gameenter.css'
 import { Link } from 'react-router-dom'
 
+
 const GameEnter = () => {
   return (
     <div className='gameContainer'>
